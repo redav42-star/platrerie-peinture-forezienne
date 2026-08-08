@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://redav42-star.github.io/platrerie-peinture-forezienne/sitemap.xml
