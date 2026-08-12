@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://redav42-star.github.io/platrerie-peinture-forezienne/</loc>
-  </url>
-  <url>
-    <loc>https://redav42-star.github.io/platrerie-peinture-forezienne/platrerie.html</loc>
-  </url>
-  <url>
-    <loc>https://redav42-star.github.io/platrerie-peinture-forezienne/peinture-airless.html</loc>
-  </url>
-  <url>
-    <loc>https://redav42-star.github.io/platrerie-peinture-forezienne/degats-des-eaux.html</loc>
-  </url>
-  <url>
-    <loc>https://redav42-star.github.io/platrerie-peinture-forezienne/contact.html</loc>
-  </url>
+  <url><loc>https://redav42-star.github.io/platrerie-peinture-forezienne/</loc><lastmod>2026-08-12</lastmod></url>
+  <url><loc>https://redav42-star.github.io/platrerie-peinture-forezienne/platrerie.html</loc><lastmod>2026-08-12</lastmod></url>
+  <url><loc>https://redav42-star.github.io/platrerie-peinture-forezienne/peinture-airless.html</loc><lastmod>2026-08-12</lastmod></url>
+  <url><loc>https://redav42-star.github.io/platrerie-peinture-forezienne/degats-des-eaux.html</loc><lastmod>2026-08-12</lastmod></url>
+  <url><loc>https://redav42-star.github.io/platrerie-peinture-forezienne/cloisons-faux-plafonds.html</loc><lastmod>2026-08-12</lastmod></url>
+  <url><loc>https://redav42-star.github.io/platrerie-peinture-forezienne/renovation-appartement.html</loc><lastmod>2026-08-12</lastmod></url>
+  <url><loc>https://redav42-star.github.io/platrerie-peinture-forezienne/professionnels.html</loc><lastmod>2026-08-12</lastmod></url>
+  <url><loc>https://redav42-star.github.io/platrerie-peinture-forezienne/contact.html</loc><lastmod>2026-08-12</lastmod></url>
 </urlset>
