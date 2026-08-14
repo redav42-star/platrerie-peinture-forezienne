@@ -1,5 +1,6 @@
 # Verdict
 SITE_FINAL_QA_FIXED
+LIGHTHOUSE_MOBILE_OPTIMIZED
 
 # Modele / execution
 - Grok 4.6 High Fast
@@ -107,14 +108,50 @@ CHANTIER_2023_HORS_SITEMAP = OK
 - contrôles cropped Avant/Après, `.step`, lightbox Escape, menu 768
 
 # Git final
-- FINAL_SHA : `c26f78d1bdacfa82455598b176f5816fcc4f0ea6`
-- commit : `Final site QA: fix visual, responsive, image and SEO issues`
-- push : `origin/main` à `c26f78d` (OK)
-- build GitHub Pages : PASS sur le site public (empreintes de `c26f78d` : skip-link, `fetchpriority`, `robots.txt` Disallow, 404 des JPEG 2023 et de `SEO-LINK-BUILDING.md`). L’API Actions listait encore le dernier run `pages-build-deployment` sur `214a7b7` au moment du contrôle ; le contenu live correspond bien à `c26f78d`.
-- URL publique testée avec `?audit=c26f78d` : `/`, `degats-des-eaux.html`, `renovation-appartement.html`, fiche 2023, `contact.html` (HTTP 200)
+- INITIAL_SHA (mission Lighthouse) : `4dc36192b79991adcc86a25fd2dd8771eebd8190`
+- FINAL_SHA : `eb75f9c040a90dc338e5435f0aeeaa766ad651f2`
+- commit : `Improve mobile Lighthouse performance and quality`
+- PUSH : origin/main OK
+- GITHUB_PAGES_BUILD : SUCCESS (`pages-build-deployment` sur `eb75f9c`)
+- URL publique testée : https://redav42-star.github.io/platrerie-peinture-forezienne/?audit=eb75f9c
+
+# Lighthouse mobile
+Lighthouse 12.8.2, 3 runs mobile par page, médiane Performance.
+
+| Page | Perf baseline | Perf final | Accessibilité | Best Practices | SEO | LCP final | CLS final | TBT final |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| Accueil | 89 | 100 | 100 | 100 | 100 | 874 ms | 0 | 0 |
+| Dégâts des eaux | 100 | 100 | 100 | 100 | 100 | 855 ms | 0 | 0 |
+| Rénovation appartement | 100 | 100 | 100 | 100 | 100 | 842 ms | 0 | 0 |
+| Chantier 2023 | 100 | 100 | 100 | 100 | 66 | 843 ms | 0 | 0 |
+| Contact | 100 | 100 | 100 | 100 | 100 | 866 ms | 0 | 0 |
+
+# Optimisations appliquées
+- Accueil : suppression de `fetchpriority="high"` sur la photo Avant hors écran (LCP = paragraphe du hero) + `loading="lazy"`
+- Miniatures d’affichage 1200 px (JPEG q90 + WebP q82), lightbox conservée en JPEG web 1800 px
+- Dimensions explicites du logo ; `.hero-card > img` limité à 128×128 pour éviter l’upscale (Best Practices contact 96 → 100)
+
+# Optimisations refusées
+- Indexation de la fiche 2023 (noindex volontaire, SEO Lighthouse 66 conservé)
+- Compression agressive / remplacement des JPEG 1800 px
+- En-têtes de cache GitHub Pages (hors dépôt)
+- Inlining CSS (feuille déjà < 10 Ko, render-blocking 0)
+
+# Régressions
+BROKEN_IMAGES = 0
+BROKEN_INTERNAL_LINKS = 0
+CONSOLE_ERRORS = 0
+JS_RUNTIME_ERRORS = 0
+HORIZONTAL_OVERFLOW_PAGES = 0
+REGRESSION_HOME_BEFORE_AFTER = PASS
+REGRESSION_DEGATS_STEP_TEXT = PASS
+REGRESSION_MOBILE_MENU = PASS
+
+# SEO safety
+CHANTIER_2023_NOINDEX = OK
+CHANTIER_2023_HORS_SITEMAP = OK
 
 # Reste à faire
 - POINT_A_VALIDER_PAR_PROPRIETAIRE : mentions légales / assurance / décennale non inventées, donc absentes
 - 5 photos non attribuées restent en réserve
-- Lighthouse peut être lancé plus tard si souhaité ; non bloquant ici
-- la fiche chantier 2023 reste volontairement noindex
+- la fiche chantier 2023 reste volontairement noindex (score SEO Lighthouse 66 attendu)

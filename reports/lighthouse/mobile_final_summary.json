@@ -1,0 +1,648 @@
+{
+  "phase": "final",
+  "generatedAt": "2026-08-14T15:07:05.930621+00:00",
+  "pages": {
+    "accueil": {
+      "runs": [
+        {
+          "file": "reports/lighthouse/mobile/final/accueil-run1.report.json",
+          "fetchTime": "2026-08-14T15:03:49.724Z",
+          "lighthouseVersion": "12.8.2",
+          "performance": 100,
+          "accessibility": 100,
+          "bestPractices": 100,
+          "seo": 100,
+          "lcp": 1057,
+          "cls": 0,
+          "tbt": 21,
+          "fcp": 1001,
+          "si": 2271,
+          "lcpElement": "1,060 ms",
+          "causes": {
+            "opportunities": [
+              {
+                "id": "server-response-time",
+                "title": "Initial server response time was short",
+                "savingsMs": 31,
+                "display": "Root document took 130 ms"
+              }
+            ],
+            "failed": [
+              {
+                "id": "network-dependency-tree-insight",
+                "title": "Network dependency tree",
+                "display": null
+              }
+            ]
+          },
+          "slug": "accueil",
+          "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/",
+          "run": 1
+        },
+        {
+          "file": "reports/lighthouse/mobile/final/accueil-run2.report.json",
+          "fetchTime": "2026-08-14T15:04:04.559Z",
+          "lighthouseVersion": "12.8.2",
+          "performance": 100,
+          "accessibility": 100,
+          "bestPractices": 100,
+          "seo": 100,
+          "lcp": 874,
+          "cls": 0,
+          "tbt": 0,
+          "fcp": 874,
+          "si": 874,
+          "lcpElement": "870 ms",
+          "causes": {
+            "opportunities": [],
+            "failed": [
+              {
+                "id": "network-dependency-tree-insight",
+                "title": "Network dependency tree",
+                "display": null
+              }
+            ]
+          },
+          "slug": "accueil",
+          "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/",
+          "run": 2
+        },
+        {
+          "file": "reports/lighthouse/mobile/final/accueil-run3.report.json",
+          "fetchTime": "2026-08-14T15:04:18.131Z",
+          "lighthouseVersion": "12.8.2",
+          "performance": 100,
+          "accessibility": 100,
+          "bestPractices": 100,
+          "seo": 100,
+          "lcp": 864,
+          "cls": 0,
+          "tbt": 0,
+          "fcp": 864,
+          "si": 864,
+          "lcpElement": "860 ms",
+          "causes": {
+            "opportunities": [],
+            "failed": [
+              {
+                "id": "network-dependency-tree-insight",
+                "title": "Network dependency tree",
+                "display": null
+              }
+            ]
+          },
+          "slug": "accueil",
+          "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/",
+          "run": 3
+        }
+      ],
+      "median": {
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100,
+        "lcp": 874,
+        "cls": 0,
+        "tbt": 0,
+        "fcp": 874,
+        "si": 874
+      },
+      "causes": {
+        "opportunities": [
+          {
+            "id": "server-response-time",
+            "title": "Initial server response time was short",
+            "savingsMs": 31,
+            "display": "Root document took 130 ms"
+          }
+        ],
+        "failed": [
+          {
+            "id": "network-dependency-tree-insight",
+            "title": "Network dependency tree",
+            "display": null
+          }
+        ]
+      }
+    },
+    "degats-des-eaux": {
+      "runs": [
+        {
+          "file": "reports/lighthouse/mobile/final/degats-des-eaux-run1.report.json",
+          "fetchTime": "2026-08-14T15:04:29.404Z",
+          "lighthouseVersion": "12.8.2",
+          "performance": 100,
+          "accessibility": 100,
+          "bestPractices": 100,
+          "seo": 100,
+          "lcp": 949,
+          "cls": 0,
+          "tbt": 0,
+          "fcp": 949,
+          "si": 2177,
+          "lcpElement": "950 ms",
+          "causes": {
+            "opportunities": [
+              {
+                "id": "server-response-time",
+                "title": "Initial server response time was short",
+                "savingsMs": 23,
+                "display": "Root document took 120 ms"
+              }
+            ],
+            "failed": [
+              {
+                "id": "network-dependency-tree-insight",
+                "title": "Network dependency tree",
+                "display": null
+              }
+            ]
+          },
+          "slug": "degats-des-eaux",
+          "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/degats-des-eaux.html",
+          "run": 1
+        },
+        {
+          "file": "reports/lighthouse/mobile/final/degats-des-eaux-run2.report.json",
+          "fetchTime": "2026-08-14T15:04:41.513Z",
+          "lighthouseVersion": "12.8.2",
+          "performance": 100,
+          "accessibility": 100,
+          "bestPractices": 100,
+          "seo": 100,
+          "lcp": 840,
+          "cls": 0,
+          "tbt": 0,
+          "fcp": 840,
+          "si": 840,
+          "lcpElement": "840 ms",
+          "causes": {
+            "opportunities": [],
+            "failed": [
+              {
+                "id": "network-dependency-tree-insight",
+                "title": "Network dependency tree",
+                "display": null
+              }
+            ]
+          },
+          "slug": "degats-des-eaux",
+          "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/degats-des-eaux.html",
+          "run": 2
+        },
+        {
+          "file": "reports/lighthouse/mobile/final/degats-des-eaux-run3.report.json",
+          "fetchTime": "2026-08-14T15:04:55.134Z",
+          "lighthouseVersion": "12.8.2",
+          "performance": 100,
+          "accessibility": 100,
+          "bestPractices": 100,
+          "seo": 100,
+          "lcp": 855,
+          "cls": 0,
+          "tbt": 0,
+          "fcp": 855,
+          "si": 855,
+          "lcpElement": "850 ms",
+          "causes": {
+            "opportunities": [],
+            "failed": [
+              {
+                "id": "network-dependency-tree-insight",
+                "title": "Network dependency tree",
+                "display": null
+              }
+            ]
+          },
+          "slug": "degats-des-eaux",
+          "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/degats-des-eaux.html",
+          "run": 3
+        }
+      ],
+      "median": {
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100,
+        "lcp": 855,
+        "cls": 0,
+        "tbt": 0,
+        "fcp": 855,
+        "si": 855
+      },
+      "causes": {
+        "opportunities": [
+          {
+            "id": "server-response-time",
+            "title": "Initial server response time was short",
+            "savingsMs": 23,
+            "display": "Root document took 120 ms"
+          }
+        ],
+        "failed": [
+          {
+            "id": "network-dependency-tree-insight",
+            "title": "Network dependency tree",
+            "display": null
+          }
+        ]
+      }
+    },
+    "renovation-appartement": {
+      "runs": [
+        {
+          "file": "reports/lighthouse/mobile/final/renovation-appartement-run1.report.json",
+          "fetchTime": "2026-08-14T15:05:05.844Z",
+          "lighthouseVersion": "12.8.2",
+          "performance": 100,
+          "accessibility": 100,
+          "bestPractices": 100,
+          "seo": 100,
+          "lcp": 943,
+          "cls": 0,
+          "tbt": 0,
+          "fcp": 943,
+          "si": 943,
+          "lcpElement": "940 ms",
+          "causes": {
+            "opportunities": [
+              {
+                "id": "server-response-time",
+                "title": "Initial server response time was short",
+                "savingsMs": 24,
+                "display": "Root document took 120 ms"
+              }
+            ],
+            "failed": [
+              {
+                "id": "network-dependency-tree-insight",
+                "title": "Network dependency tree",
+                "display": null
+              }
+            ]
+          },
+          "slug": "renovation-appartement",
+          "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/renovation-appartement.html",
+          "run": 1
+        },
+        {
+          "file": "reports/lighthouse/mobile/final/renovation-appartement-run2.report.json",
+          "fetchTime": "2026-08-14T15:05:19.682Z",
+          "lighthouseVersion": "12.8.2",
+          "performance": 100,
+          "accessibility": 100,
+          "bestPractices": 100,
+          "seo": 100,
+          "lcp": 842,
+          "cls": 0,
+          "tbt": 0,
+          "fcp": 842,
+          "si": 842,
+          "lcpElement": "840 ms",
+          "causes": {
+            "opportunities": [],
+            "failed": [
+              {
+                "id": "network-dependency-tree-insight",
+                "title": "Network dependency tree",
+                "display": null
+              }
+            ]
+          },
+          "slug": "renovation-appartement",
+          "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/renovation-appartement.html",
+          "run": 2
+        },
+        {
+          "file": "reports/lighthouse/mobile/final/renovation-appartement-run3.report.json",
+          "fetchTime": "2026-08-14T15:05:33.149Z",
+          "lighthouseVersion": "12.8.2",
+          "performance": 100,
+          "accessibility": 100,
+          "bestPractices": 100,
+          "seo": 100,
+          "lcp": 833,
+          "cls": 0,
+          "tbt": 0,
+          "fcp": 833,
+          "si": 833,
+          "lcpElement": "830 ms",
+          "causes": {
+            "opportunities": [],
+            "failed": [
+              {
+                "id": "network-dependency-tree-insight",
+                "title": "Network dependency tree",
+                "display": null
+              }
+            ]
+          },
+          "slug": "renovation-appartement",
+          "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/renovation-appartement.html",
+          "run": 3
+        }
+      ],
+      "median": {
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100,
+        "lcp": 842,
+        "cls": 0,
+        "tbt": 0,
+        "fcp": 842,
+        "si": 842
+      },
+      "causes": {
+        "opportunities": [
+          {
+            "id": "server-response-time",
+            "title": "Initial server response time was short",
+            "savingsMs": 24,
+            "display": "Root document took 120 ms"
+          }
+        ],
+        "failed": [
+          {
+            "id": "network-dependency-tree-insight",
+            "title": "Network dependency tree",
+            "display": null
+          }
+        ]
+      }
+    },
+    "chantier-2023": {
+      "runs": [
+        {
+          "file": "reports/lighthouse/mobile/final/chantier-2023-run1.report.json",
+          "fetchTime": "2026-08-14T15:05:46.596Z",
+          "lighthouseVersion": "12.8.2",
+          "performance": 100,
+          "accessibility": 100,
+          "bestPractices": 100,
+          "seo": 66,
+          "lcp": 843,
+          "cls": 0,
+          "tbt": 0,
+          "fcp": 843,
+          "si": 843,
+          "lcpElement": "840 ms",
+          "causes": {
+            "opportunities": [
+              {
+                "id": "server-response-time",
+                "title": "Initial server response time was short",
+                "savingsMs": 31,
+                "display": "Root document took 130 ms"
+              }
+            ],
+            "failed": [
+              {
+                "id": "is-crawlable",
+                "title": "Page is blocked from indexing",
+                "display": null
+              },
+              {
+                "id": "network-dependency-tree-insight",
+                "title": "Network dependency tree",
+                "display": null
+              }
+            ]
+          },
+          "slug": "chantier-2023",
+          "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/chantier-renovation-appartement-saint-etienne-2023.html",
+          "run": 1
+        },
+        {
+          "file": "reports/lighthouse/mobile/final/chantier-2023-run2.report.json",
+          "fetchTime": "2026-08-14T15:06:00.630Z",
+          "lighthouseVersion": "12.8.2",
+          "performance": 100,
+          "accessibility": 100,
+          "bestPractices": 100,
+          "seo": 66,
+          "lcp": 1022,
+          "cls": 0,
+          "tbt": 12,
+          "fcp": 958,
+          "si": 2244,
+          "lcpElement": "1,020 ms",
+          "causes": {
+            "opportunities": [
+              {
+                "id": "server-response-time",
+                "title": "Initial server response time was short",
+                "savingsMs": 23,
+                "display": "Root document took 120 ms"
+              }
+            ],
+            "failed": [
+              {
+                "id": "is-crawlable",
+                "title": "Page is blocked from indexing",
+                "display": null
+              },
+              {
+                "id": "network-dependency-tree-insight",
+                "title": "Network dependency tree",
+                "display": null
+              }
+            ]
+          },
+          "slug": "chantier-2023",
+          "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/chantier-renovation-appartement-saint-etienne-2023.html",
+          "run": 2
+        },
+        {
+          "file": "reports/lighthouse/mobile/final/chantier-2023-run3.report.json",
+          "fetchTime": "2026-08-14T15:06:15.628Z",
+          "lighthouseVersion": "12.8.2",
+          "performance": 100,
+          "accessibility": 100,
+          "bestPractices": 100,
+          "seo": 66,
+          "lcp": 842,
+          "cls": 0,
+          "tbt": 0,
+          "fcp": 842,
+          "si": 842,
+          "lcpElement": "840 ms",
+          "causes": {
+            "opportunities": [],
+            "failed": [
+              {
+                "id": "is-crawlable",
+                "title": "Page is blocked from indexing",
+                "display": null
+              },
+              {
+                "id": "network-dependency-tree-insight",
+                "title": "Network dependency tree",
+                "display": null
+              }
+            ]
+          },
+          "slug": "chantier-2023",
+          "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/chantier-renovation-appartement-saint-etienne-2023.html",
+          "run": 3
+        }
+      ],
+      "median": {
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 66,
+        "lcp": 843,
+        "cls": 0,
+        "tbt": 0,
+        "fcp": 843,
+        "si": 843
+      },
+      "causes": {
+        "opportunities": [
+          {
+            "id": "server-response-time",
+            "title": "Initial server response time was short",
+            "savingsMs": 31,
+            "display": "Root document took 130 ms"
+          }
+        ],
+        "failed": [
+          {
+            "id": "is-crawlable",
+            "title": "Page is blocked from indexing",
+            "display": null
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "title": "Network dependency tree",
+            "display": null
+          }
+        ]
+      }
+    },
+    "contact": {
+      "runs": [
+        {
+          "file": "reports/lighthouse/mobile/final/contact-run1.report.json",
+          "fetchTime": "2026-08-14T15:06:29.180Z",
+          "lighthouseVersion": "12.8.2",
+          "performance": 100,
+          "accessibility": 100,
+          "bestPractices": 100,
+          "seo": 100,
+          "lcp": 866,
+          "cls": 0,
+          "tbt": 0,
+          "fcp": 866,
+          "si": 866,
+          "lcpElement": "870 ms",
+          "causes": {
+            "opportunities": [
+              {
+                "id": "server-response-time",
+                "title": "Initial server response time was short",
+                "savingsMs": 46,
+                "display": "Root document took 150 ms"
+              }
+            ],
+            "failed": [
+              {
+                "id": "network-dependency-tree-insight",
+                "title": "Network dependency tree",
+                "display": null
+              }
+            ]
+          },
+          "slug": "contact",
+          "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/contact.html",
+          "run": 1
+        },
+        {
+          "file": "reports/lighthouse/mobile/final/contact-run2.report.json",
+          "fetchTime": "2026-08-14T15:06:42.681Z",
+          "lighthouseVersion": "12.8.2",
+          "performance": 100,
+          "accessibility": 100,
+          "bestPractices": 100,
+          "seo": 100,
+          "lcp": 956,
+          "cls": 0,
+          "tbt": 0,
+          "fcp": 956,
+          "si": 2173,
+          "lcpElement": "960 ms",
+          "causes": {
+            "opportunities": [],
+            "failed": [
+              {
+                "id": "network-dependency-tree-insight",
+                "title": "Network dependency tree",
+                "display": null
+              }
+            ]
+          },
+          "slug": "contact",
+          "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/contact.html",
+          "run": 2
+        },
+        {
+          "file": "reports/lighthouse/mobile/final/contact-run3.report.json",
+          "fetchTime": "2026-08-14T15:06:57.254Z",
+          "lighthouseVersion": "12.8.2",
+          "performance": 100,
+          "accessibility": 100,
+          "bestPractices": 100,
+          "seo": 100,
+          "lcp": 856,
+          "cls": 0,
+          "tbt": 0,
+          "fcp": 856,
+          "si": 856,
+          "lcpElement": "860 ms",
+          "causes": {
+            "opportunities": [],
+            "failed": [
+              {
+                "id": "network-dependency-tree-insight",
+                "title": "Network dependency tree",
+                "display": null
+              }
+            ]
+          },
+          "slug": "contact",
+          "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/contact.html",
+          "run": 3
+        }
+      ],
+      "median": {
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100,
+        "lcp": 866,
+        "cls": 0,
+        "tbt": 0,
+        "fcp": 866,
+        "si": 866
+      },
+      "causes": {
+        "opportunities": [
+          {
+            "id": "server-response-time",
+            "title": "Initial server response time was short",
+            "savingsMs": 46,
+            "display": "Root document took 150 ms"
+          }
+        ],
+        "failed": [
+          {
+            "id": "network-dependency-tree-insight",
+            "title": "Network dependency tree",
+            "display": null
+          }
+        ]
+      }
+    }
+  }
+}
