@@ -247,8 +247,8 @@ def main() -> int:
         "jsonld_errors": jsonld_errors,
         "html_nest_errors": nest_errors,
         "duplicate_ids": dup_ids,
-        "CHANTIER_2023_NOINDEX": chantier_noindex,
-        "CHANTIER_2023_HORS_SITEMAP": not chantier_in_sitemap,
+        "CHANTIER_2023_INDEXABLE": not chantier_noindex,
+        "CHANTIER_2023_DANS_SITEMAP": chantier_in_sitemap,
         "BROKEN_IMAGES": len(broken_images),
         "BROKEN_INTERNAL_LINKS": len(broken_links),
         "MISSING_LOCAL_ASSETS": len(missing_assets),
@@ -272,11 +272,12 @@ def main() -> int:
     ]
     for g in gates:
         print(f"{g} = {report[g]}")
-    print("CHANTIER_2023_NOINDEX =", "OK" if chantier_noindex else "FAIL")
-    print("CHANTIER_2023_HORS_SITEMAP =", "OK" if not chantier_in_sitemap else "FAIL")
-    fail = any(report[g] != 0 for g in gates)
+    print("CHANTIER_2023_INDEXABLE =", "OK" if not chantier_noindex else "FAIL")
+    print("CHANTIER_2023_DANS_SITEMAP =", "OK" if chantier_in_sitemap else "FAIL")
+    fail = any(report[g] != 0 for g in gates) or chantier_noindex or not chantier_in_sitemap
     return 1 if fail else 0
 
 
 if __name__ == "__main__":
     sys.exit(main())
+

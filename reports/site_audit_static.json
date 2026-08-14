@@ -19,7 +19,7 @@
         "Rénovation complète d’un appartement à Saint-Étienne"
       ],
       "canonical": "https://redav42-star.github.io/platrerie-peinture-forezienne/chantier-renovation-appartement-saint-etienne-2023.html",
-      "robots": "noindex,follow",
+      "robots": "index,follow",
       "lang": "fr"
     },
     {
@@ -1093,8 +1093,8 @@
   "jsonld_errors": [],
   "html_nest_errors": [],
   "duplicate_ids": [],
-  "CHANTIER_2023_NOINDEX": true,
-  "CHANTIER_2023_HORS_SITEMAP": true,
+  "CHANTIER_2023_INDEXABLE": true,
+  "CHANTIER_2023_DANS_SITEMAP": true,
   "BROKEN_IMAGES": 0,
   "BROKEN_INTERNAL_LINKS": 0,
   "MISSING_LOCAL_ASSETS": 0,
