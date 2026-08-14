@@ -5,3 +5,5 @@ SEO-LINK-BUILDING.md
 *.zip
 .DS_Store
 Thumbs.db
+reports/lighthouse/mobile/**/*.report.html
+reports/lighthouse/mobile/local-*

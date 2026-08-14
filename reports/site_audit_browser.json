@@ -14,8 +14,8 @@
         "strong": "rgb(255, 255, 255)"
       },
       "avant": {
-        "src": "http://127.0.0.1:8000/assets/chantiers/web/20230530_095335.jpg",
-        "nw": 1012,
+        "src": "",
+        "nw": 0,
         "dw": 349,
         "dh": 520
       }
@@ -97,8 +97,8 @@
       "navCount": 6,
       "stepColor": null,
       "avant": {
-        "src": "http://127.0.0.1:8000/assets/chantiers/web/20230530_095335.jpg",
-        "nw": 1012,
+        "src": "http://127.0.0.1:8000/assets/chantiers/display/20230530_095335.webp",
+        "nw": 675,
         "dw": 349,
         "dh": 520
       }
@@ -184,8 +184,8 @@
         "strong": "rgb(255, 255, 255)"
       },
       "avant": {
-        "src": "http://127.0.0.1:8000/assets/chantiers/web/20230530_095335.jpg",
-        "nw": 1012,
+        "src": "",
+        "nw": 0,
         "dw": 404,
         "dh": 520
       }
@@ -267,8 +267,8 @@
       "navCount": 6,
       "stepColor": null,
       "avant": {
-        "src": "http://127.0.0.1:8000/assets/chantiers/web/20230530_095335.jpg",
-        "nw": 1012,
+        "src": "http://127.0.0.1:8000/assets/chantiers/display/20230530_095335.webp",
+        "nw": 675,
         "dw": 404,
         "dh": 520
       }
@@ -354,8 +354,8 @@
         "strong": "rgb(255, 255, 255)"
       },
       "avant": {
-        "src": "http://127.0.0.1:8000/assets/chantiers/web/20230530_095335.jpg",
-        "nw": 1012,
+        "src": "",
+        "nw": 0,
         "dw": 357,
         "dh": 635
       }
@@ -437,8 +437,8 @@
       "navCount": 6,
       "stepColor": null,
       "avant": {
-        "src": "http://127.0.0.1:8000/assets/chantiers/web/20230530_095335.jpg",
-        "nw": 1012,
+        "src": "http://127.0.0.1:8000/assets/chantiers/display/20230530_095335.webp",
+        "nw": 675,
         "dw": 357,
         "dh": 635
       }
@@ -524,8 +524,8 @@
         "strong": "rgb(255, 255, 255)"
       },
       "avant": {
-        "src": "http://127.0.0.1:8000/assets/chantiers/web/20230530_095335.jpg",
-        "nw": 1012,
+        "src": "http://127.0.0.1:8000/assets/chantiers/display/20230530_095335.webp",
+        "nw": 675,
         "dw": 378,
         "dh": 538
       }
@@ -607,8 +607,8 @@
       "navCount": 6,
       "stepColor": null,
       "avant": {
-        "src": "http://127.0.0.1:8000/assets/chantiers/web/20230530_095335.jpg",
-        "nw": 1012,
+        "src": "http://127.0.0.1:8000/assets/chantiers/display/20230530_095335.webp",
+        "nw": 675,
         "dw": 378,
         "dh": 538
       }
@@ -694,8 +694,8 @@
         "strong": "rgb(255, 255, 255)"
       },
       "avant": {
-        "src": "http://127.0.0.1:8000/assets/chantiers/web/20230530_095335.jpg",
-        "nw": 1012,
+        "src": "http://127.0.0.1:8000/assets/chantiers/display/20230530_095335.webp",
+        "nw": 675,
         "dw": 378,
         "dh": 630
       }
@@ -777,8 +777,8 @@
       "navCount": 6,
       "stepColor": null,
       "avant": {
-        "src": "http://127.0.0.1:8000/assets/chantiers/web/20230530_095335.jpg",
-        "nw": 1012,
+        "src": "http://127.0.0.1:8000/assets/chantiers/display/20230530_095335.webp",
+        "nw": 675,
         "dw": 378,
         "dh": 630
       }
