@@ -155,3 +155,57 @@ CHANTIER_2023_HORS_SITEMAP = OK
 - POINT_A_VALIDER_PAR_PROPRIETAIRE : mentions légales / assurance / décennale non inventées, donc absentes
 - 5 photos non attribuées restent en réserve
 - la fiche chantier 2023 reste volontairement noindex (score SEO Lighthouse 66 attendu)
+
+# Mission indexation fiche chantier 2023 — 14/08/2026
+
+Cette section remplace explicitement l’ancien état temporaire `noindex` documenté plus haut.
+
+## Verdict
+
+CHANTIER_2023_READY_FOR_GOOGLE_INDEXING
+
+## État Git
+
+- HEAD initial vérifié : `3356b7c2627fe8607d1ac2590bf6274a5814216c`
+- commit d’indexation : `99207bf3de0d0ccbdb6f2d12df07fea8ede6f688`
+- message : `Enable indexing for 2023 renovation case study`
+- branche : `main`
+- publication : OK
+
+## Modifications
+
+- `chantier-renovation-appartement-saint-etienne-2023.html` : `noindex,follow` remplacé par `index,follow`
+- `sitemap.xml` : URL de la fiche ajoutée une seule fois avec `lastmod` `2026-08-14`
+- `scripts/audit_site.py` : gates adaptés au nouvel état attendu (indexable + présent dans le sitemap)
+- `reports/site_audit_static.json` : rapport statique post-modification actualisé
+
+## Validation avant et après modification
+
+- 8 photos chantier vérifiées : 2 Avant, 3 Pendant, 3 Après
+- versions affichage 1200 px et lightbox 1800 px présentes, lisibles et sans upscale visible
+- contenu relu : aucune assurance, décennale, certification, tarif, avis, expérience ou prestation non confirmée ajoutée
+- audit statique : images, liens, ressources, H1, canonicals, JSON-LD, textes alternatifs et fichiers sensibles à zéro erreur
+- audit navigateur : 12 pages × 5 viewports (375, 430, 768, 1024, 1440)
+- `CONSOLE_ERRORS = 0`
+- `JS_RUNTIME_ERRORS = 0`
+- `HORIZONTAL_OVERFLOW_PAGES = 0`
+- `LOCAL_PAGE_404 = 0`
+- `LOCAL_ASSET_404 = 0`
+- lightbox : ouverture OK, `aria-modal` OK, fermeture Escape OK
+
+## Déploiement public
+
+- GitHub Pages run : `31814804193`
+- conclusion : `success`
+- page publique : HTTP 200, `index,follow`, canonique correcte
+- sitemap public : HTTP 200, fiche présente exactement une fois, `lastmod 2026-08-14`
+- `robots.txt` public : HTTP 200, aucune règle bloquant la fiche
+
+## Action manuelle restante
+
+Une seule action : dans Google Search Console, inspecter l’URL de la fiche puis cliquer sur « Demander une indexation ».
+
+## Points toujours à valider par le propriétaire
+
+- POINT_A_VALIDER_PAR_PROPRIETAIRE : médiateur de la consommation
+- POINT_A_VALIDER_PAR_PROPRIETAIRE : assurance / décennale actuelle 2026
