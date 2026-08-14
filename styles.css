@@ -67,6 +67,28 @@ section{padding:70px 0}
 .review p{color:#4c554c}
 .review strong{display:block;margin-top:14px}
 .gallery-note{background:var(--soft);border:1px dashed #b8c8b7;border-radius:18px;padding:24px}
+.before-after,.work-gallery,.case-gallery{display:grid;gap:18px;align-items:start}
+.before-after{grid-template-columns:repeat(2,minmax(0,380px));justify-content:center}
+.work-gallery,.case-gallery{grid-template-columns:repeat(auto-fit,minmax(240px,320px));justify-content:center}
+.before-after figure,.work-gallery figure,.case-gallery figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 8px 24px rgba(20,40,20,.05);min-width:0;position:relative}
+.before-after img,.work-gallery img,.case-gallery img{width:100%;height:auto;max-height:min(70vh,680px);object-fit:contain;object-position:center top;background:var(--soft);display:block}
+.before-after figcaption,.work-gallery figcaption,.case-gallery figcaption{padding:12px 14px 16px;color:var(--muted);font-size:.95rem}
+.photo-badge{display:inline-block;background:var(--green);color:#fff;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:5px 10px;margin:12px 14px 0}
+.work-gallery a,.case-gallery a,.before-after a{color:inherit;text-decoration:none}
+.lightbox{border:0;padding:18px;max-width:min(920px,96vw);background:#0f110f;color:#fff;border-radius:16px}
+.lightbox::backdrop{background:rgba(8,10,8,.82)}
+.lightbox img{max-width:100%;max-height:78vh;height:auto;margin:12px auto;object-fit:contain}
+.lightbox-caption{margin:8px 0 0;color:#ccd2cc;font-size:.95rem}
+.lightbox-close,.lightbox-prev,.lightbox-next{background:#fff;color:var(--ink);border:0;border-radius:10px;font-weight:800;cursor:pointer}
+.lightbox-close{padding:8px 12px}
+.lightbox-prev,.lightbox-next{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;font-size:28px;line-height:1}
+.lightbox-prev{left:10px}
+.lightbox-next{right:10px}
+.lightbox{position:relative}
+@media(max-width:680px){
+  .before-after,.work-gallery,.case-gallery{grid-template-columns:1fr}
+  .before-after img,.work-gallery img,.case-gallery img{max-height:min(70vh,520px)}
+}
 .zone-list{display:flex;flex-wrap:wrap;gap:9px}
 .zone-list span{padding:8px 11px;border-radius:999px;background:var(--soft);border:1px solid var(--line);font-weight:700;font-size:13px}
 .cta-box{background:linear-gradient(145deg,#171917,#0b0c0b);color:#fff;border-radius:24px;padding:30px;min-width:0}
