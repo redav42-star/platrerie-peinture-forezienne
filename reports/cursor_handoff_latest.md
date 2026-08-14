@@ -107,11 +107,11 @@ CHANTIER_2023_HORS_SITEMAP = OK
 - contrôles cropped Avant/Après, `.step`, lightbox Escape, menu 768
 
 # Git final
-- FINAL_SHA : (après commit)
-- commit : à pousser
-- push : à vérifier
-- build GitHub Pages : à vérifier
-- URL publique : https://redav42-star.github.io/platrerie-peinture-forezienne/
+- FINAL_SHA : `c26f78d1bdacfa82455598b176f5816fcc4f0ea6`
+- commit : `Final site QA: fix visual, responsive, image and SEO issues`
+- push : `origin/main` à `c26f78d` (OK)
+- build GitHub Pages : PASS sur le site public (empreintes de `c26f78d` : skip-link, `fetchpriority`, `robots.txt` Disallow, 404 des JPEG 2023 et de `SEO-LINK-BUILDING.md`). L’API Actions listait encore le dernier run `pages-build-deployment` sur `214a7b7` au moment du contrôle ; le contenu live correspond bien à `c26f78d`.
+- URL publique testée avec `?audit=c26f78d` : `/`, `degats-des-eaux.html`, `renovation-appartement.html`, fiche 2023, `contact.html` (HTTP 200)
 
 # Reste à faire
 - POINT_A_VALIDER_PAR_PROPRIETAIRE : mentions légales / assurance / décennale non inventées, donc absentes
