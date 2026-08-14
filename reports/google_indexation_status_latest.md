@@ -56,8 +56,8 @@ Le sitemap public a été contrôlé séparément après l’envoi : HTTP 200, t
 - Fichier ajouté pendant cette mission : `reports/google_indexation_status_latest.md`.
 - Aucun texte, design, balisage ou fichier fonctionnel du site n’a été modifié : les 12 pages étaient techniquement prêtes.
 - Commit de référence audité avant publication du rapport : `1d0477fdd2f88d54de8d9e51b1f693fd7644fb8d` sur `main`.
-- Push du rapport : prévu sur `main` après validation de ce document.
-- GitHub Pages : le site public audité sert correctement les pages, robots.txt et sitemap.xml. Le rapport est exclu de l’exploration par robots.txt (`Disallow: /reports/`).
+- Push du rapport : effectué sur `main` le 14 août 2026.
+- GitHub Pages : déploiement réussi après publication du rapport. Le site public audité sert correctement les pages, robots.txt et sitemap.xml. Le rapport est exclu de l’exploration par robots.txt (`Disallow: /reports/`).
 
 ## Action manuelle restante
 
@@ -66,5 +66,4 @@ Aucune action manuelle immédiate. Google doit maintenant traiter la demande uni
 ## Verdict final
 
 `INDEXATION_REQUESTS_PENDING`
-
 
