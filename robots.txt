@@ -1,5 +1,9 @@
 # Plâtrerie Peinture Forézienne
 User-agent: *
 Allow: /
+Disallow: /reports/
+Disallow: /tools/
+Disallow: /scripts/
+Disallow: /assets/chantiers/import-originals/
 
 Sitemap: https://redav42-star.github.io/platrerie-peinture-forezienne/sitemap.xml

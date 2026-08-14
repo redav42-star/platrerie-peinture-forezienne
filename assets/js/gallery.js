@@ -11,10 +11,18 @@
   });
   if (!links.length) return;
 
+  var dialog = null;
+  var img = null;
+  var caption = null;
+  var index = 0;
+  var lastFocus = null;
+
   function ensureDialog() {
     if (dialog) return;
     dialog = document.createElement("dialog");
     dialog.className = "lightbox";
+    dialog.setAttribute("role", "dialog");
+    dialog.setAttribute("aria-modal", "true");
     dialog.setAttribute("aria-label", "Agrandissement de la photo");
     dialog.innerHTML =
       '<button type="button" class="lightbox-close" aria-label="Fermer">Fermer</button>' +
@@ -25,9 +33,7 @@
     document.body.appendChild(dialog);
     img = dialog.querySelector("img");
     caption = dialog.querySelector(".lightbox-caption");
-    dialog.querySelector(".lightbox-close").addEventListener("click", function () {
-      dialog.close();
-    });
+    dialog.querySelector(".lightbox-close").addEventListener("click", close);
     dialog.querySelector(".lightbox-prev").addEventListener("click", function () {
       show(index - 1);
     });
@@ -35,14 +41,12 @@
       show(index + 1);
     });
     dialog.addEventListener("click", function (e) {
-      if (e.target === dialog) dialog.close();
+      if (e.target === dialog) close();
+    });
+    dialog.addEventListener("close", function () {
+      if (lastFocus) lastFocus.focus();
     });
   }
-
-  var dialog = null;
-  var img = null;
-  var caption = null;
-  var index = 0;
 
   function show(i) {
     ensureDialog();
@@ -56,16 +60,24 @@
     caption.textContent = cap ? cap.textContent : "";
   }
 
+  function close() {
+    if (dialog && dialog.open) dialog.close();
+  }
+
   links.forEach(function (a, i) {
     a.addEventListener("click", function (e) {
       e.preventDefault();
+      lastFocus = document.activeElement;
       show(i);
       if (typeof dialog.showModal === "function") dialog.showModal();
       else dialog.setAttribute("open", "");
+      dialog.querySelector(".lightbox-close").focus();
     });
   });
+
   document.addEventListener("keydown", function (e) {
     if (!dialog || !dialog.open) return;
+    if (e.key === "Escape") close();
     if (e.key === "ArrowLeft") show(index - 1);
     if (e.key === "ArrowRight") show(index + 1);
   });

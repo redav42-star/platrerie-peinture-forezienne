@@ -30,7 +30,9 @@ nav a{text-decoration:none;font-weight:700;font-size:14px;white-space:nowrap}
 .btn-dark{background:var(--black);color:#fff}
 .btn-outline{border-color:var(--line);background:#fff;color:var(--ink)}
 .btn:hover{opacity:.94}
-a:focus-visible,.btn:focus-visible,summary:focus-visible{outline:3px solid rgba(43,132,39,.45);outline-offset:3px}
+a:focus-visible,.btn:focus-visible,summary:focus-visible,.skip-link:focus-visible{outline:3px solid rgba(43,132,39,.45);outline-offset:3px}
+.skip-link{position:absolute;left:-999px;top:8px;z-index:100;background:#fff;color:var(--ink);padding:8px 12px;border-radius:8px;font-weight:800;text-decoration:none}
+.skip-link:focus{left:8px}
 .hero{background:radial-gradient(circle at 80% 20%,rgba(47,143,42,.18),transparent 25%),linear-gradient(135deg,#f8faf7 0%,#fff 55%,#eef5ec 100%);padding:72px 0 58px}
 .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:42px;align-items:center}
 .eyebrow{color:var(--green2);font-size:13px;font-weight:900;text-transform:uppercase;letter-spacing:.12em}
@@ -59,7 +61,7 @@ section{padding:70px 0}
 .dark .eyebrow,.cta-box .eyebrow{color:#8fdb89}
 .dark .btn-outline{background:#fff;color:var(--ink);border-color:#fff}
 .step{display:grid;grid-template-columns:42px minmax(0,1fr);gap:12px;padding:15px;border-radius:14px;background:#191c19;border:1px solid #303630;color:#e9eee9}
-.step strong{color:#fff}
+.step div,.step strong{color:#fff}
 .step b{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--green);color:#fff}
 .steps{display:grid;gap:12px}
 .review-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}

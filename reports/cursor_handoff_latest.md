@@ -1,91 +1,120 @@
 # Verdict
-PHOTO_SITE_AUDIT_FIXED
+SITE_FINAL_QA_FIXED
 
-# ZIP photos
-- emplacement trouvé : `D:\TELERCHAR\photos-chantiers-originaux-pour-cursor.zip` (12 293 199 o, 14/08/2026 14:47)
-- nombre de photos extraites : 26
-- dossier cible : `assets/chantiers/import-originals/` (sources locales, non publiées)
-- versions web : `assets/chantiers/web/` (26 JPEG, côté long ≤ 1800 px, qualité 90, aucun upscale)
-- vérification manifest : SHA256 et dimensions OK pour les 26 fichiers
-- `CONTACT_SHEET_AUDIT_NE_PAS_PUBLIER.jpg` : utilisée uniquement pour l’audit visuel, **jamais publiée**
+# Modele / execution
+- Grok 4.6 High Fast
+- 14/08/2026 15:20–15:45 (heure de Paris)
+- repo : https://github.com/redav42-star/platrerie-peinture-forezienne
+- branche : main
 
-# Etat initial
-- SHA initial : `fdd500c206e702f9dcba5fc86cabc1ef5be3e666`
-- JPEG `assets/chantiers/2023/avant-piece.jpg` et `avant-plafond.jpg` présents mais **tronqués** (`broken data stream`) : les navigateurs ne les décodent pas
-- `apres-salon.jpg` / `apres-couloir.jpg` valides mais miniatures ~300×532 (~8–9 Ko) : floues une fois agrandies
-- seulement 3–4 photos visibles sur le site alors que 26 originaux étaient fournis
+# Git initial
+- INITIAL_SHA : `214a7b74a449d18e299bf6b27a4ccfd0fc0638ce`
+- état initial : `main` derrière origin d’1 commit (`Corrige le contraste du texte dans les etapes`) + fichiers locaux non commités (rapport + JPEG web non utilisés)
+- branche backup créée : `backup/site-audit-20260814-1520` (pointe sur `e0b3c75` avant fast-forward)
+- stash local conservé, puis `git pull --ff-only origin main`
 
-# Bug photo AVANT accueil
-- cause exacte : le fichier `assets/chantiers/2023/avant-piece.jpg` était un JPEG corrompu (flux tronqué). Le chemin HTML était correct, le fichier existait, mais le décodage échouait.
-- correction exacte : remplacement par l’original `20230530_095335.jpg` exporté en `assets/chantiers/web/20230530_095335.jpg` (1012×1800, ~268 Ko), JPEG valide, `object-fit: contain`
+# Inventaire
+- 12 pages contenu HTML + 1 fichier de vérification Google
+- images publiées : logo, favicon, 21 JPEG web de chantier réellement liés
+- CSS : `styles.css`
+- JS : `assets/js/gallery.js`
+- sitemap : 11 URLs (fiche chantier 2023 absente)
 
-# Inventaire photos
-- 26 originaux fournis
-- photos chantier 2023 confirmées (8/8 affichées sur la fiche) :
-  - Avant : `20230530_095335.jpg`, `20230530_095504.jpg`
-  - Pendant : `20230530_095338.jpg`, `20230711_185634.jpg`, `20230922_120844.jpg`
-  - Après : `20230922_120655.jpg`, `20230922_120855.jpg`, `20230922_120900.jpg`
-- autres photos utilisées (sans inventer commune / date / travaux) :
-  - placo / cloisons : `20240618_104920.jpg`, `20250815_123931.jpg`, `Snapchat-42290463.jpg`
-  - bandes à joints : `20240721_155050.jpg`, `20250815_123931.jpg`
-  - ratissage / enduits : `20241005_073208.jpg`, `20241005_073140.jpg`, `20241005_073202.jpg`
-  - peinture / Airless : `IMG-20240430-WA0004.jpg`, `20241005_073045.jpg`, `20241115_145214.jpg`, `20241115_145305.jpg`, `20241116_150146.jpg`, `Snapchat-848538168.jpg`
-- photos non utilisées (sujet ambigu ou hors prestation claire, pour ne pas inventer) :
-  - `20241005_073226.jpg` (série déjà représentée)
-  - `20241115_145553.jpg` (série déjà représentée)
-  - `20251118_122319.jpg` (poêle, hors plâtrerie/peinture)
-  - `20260217_151910.jpg` (non attribuée de façon sûre)
-  - `20260306_180522.jpg` (chantier trop encombré / hors focus)
-- anciennes miniatures remplacées : `avant-piece.jpg`, `avant-plafond.jpg`, `apres-salon.jpg`, `apres-couloir.jpg` ne sont plus liées
+# Bugs trouvés
+- page : site public / GitHub Pages — symptôme : JPEG 2023 corrompus et miniatures encore téléchargeables — cause : anciens fichiers toujours suivis par Git — correction : suppression de `assets/chantiers/2023/*.jpg`
+- page : site public — symptôme : plan interne de link building indexable — cause : `SEO-LINK-BUILDING.md` dans le dépôt Pages — correction : retiré du Git, copie conservée hors repo (`D:\TELERCHAR\SEO-LINK-BUILDING.md`)
+- page : toutes — symptôme : pas de lien d’évitement ni de label de navigation — cause : HTML incomplet — correction : skip-link, `main#contenu`, `nav aria-label`
+- page : dégâts des eaux / accueil — symptôme historique : texte `.step` trop sombre — cause : cartes noires héritant de `body` — correction déjà sur main (`214a7b7`) renforcée (`.step div` et `.step strong` en blanc)
+- page : lightbox — symptôme : focus et Escape incomplets — cause : dialog créé sans `aria-modal` ni restauration de focus — correction : `gallery.js`
+- page : robots — symptôme : rapports/outils crawlables — cause : `Allow: /` seul — correction : `Disallow` reports/tools/scripts/import-originals
+- page : JSON-LD accueil — symptôme : téléphone avec espaces — cause : format Schema peu normalisé — correction : `+33616783444`
 
-# Qualité
-Pour les principales images :
-- `20230530_095335.jpg` : source 1152×2048 / 430 Ko → web 1012×1800 / 274 Ko — aucune upscale — contrôle visuel OK (plafond fissuré lisible)
-- `20230922_120900.jpg` : source 1155×2048 / 462 Ko → web 1015×1800 / 303 Ko — aucune upscale — contrôle visuel OK
-- `20230922_120855.jpg` : source 1155×2048 / 459 Ko → web 1015×1800 / 299 Ko — aucune upscale — contrôle visuel OK
-- `IMG-20240430-WA0004.jpg` : source 1512×2016 / 170 Ko → web 1350×1800 / 257 Ko — aucune upscale
-- `Snapchat-848538168.jpg` : source 900×1200 conservée (pas d’upscale)
-- JPEG qualité 90, ratio conservé, orientation EXIF corrigée si besoin
+# Régressions connues
+- accueil avant/après : PASS (JPEG web 1012×1800 / 1015×1800, labels Avant/Après, 0 image cassée)
+- dégâts des eaux .step : PASS (fond `rgb(25,28,25)`, texte `rgb(255,255,255)`)
+- menu mobile : PASS (6 liens visibles à 375/430/768/900)
+- cartes/grilles : PASS (aucune overflow horizontale mesurée)
 
-# Fichiers modifiés
-- `index.html`, `chantier-renovation-appartement-saint-etienne-2023.html`, `renovation-appartement.html`
-- `platrerie.html`, `cloisons-faux-plafonds.html`, `bandes-a-joints-jointeur.html`, `ratissage-enduits.html`, `peinture-airless.html`
-- `styles.css`
-- `assets/js/gallery.js` (lightbox légère, créée au clic)
-- `assets/chantiers/web/*.jpg` (26)
-- `tools/audit_site.py`, `tools/generate_web_photos.py`, `tools/http_check_pages.py`
-- `.gitignore` (originaux + planche contact exclus du dépôt public)
-- `reports/cursor_handoff_latest.md`, `reports/asset_audit.json`, `reports/web_photos.json`
+# Photos
+- sources : ZIP `D:\TELERCHAR\photos-chantiers-originaux-pour-cursor.zip` + copies locales gitignorées `assets/chantiers/import-originals/`
+- images web produites : 21 JPEG utilisés, côté long ≤ 1800, qualité 90, aucun upscale, EXIF GPS absent
+- images supprimées du public : miniatures/JPEG tronqués 2023, logo `.jpg` doublon, planche contact jamais publiée
+- 5 photos non attribuées restent hors Git
+- originaux hors dépôt public
 
-# Tests
-- 375 : overflow X = non, Avant/Après visibles, CTA mobile OK
-- 430 : overflow X = non
-- 768 : overflow X = non
-- 1024 : overflow X = non, photo Avant OK
-- 1440 : overflow X = non, bloc Avant/Après net, 8 photos fiche 2023 OK
-- images 404 : 0 (HTTP local)
-- liens cassés : 0
-- screenshots : accueil desktop, accueil mobile 375, fiche chantier 2023
-- serveur local : `python -m http.server 8000`
+# Responsive
+- 375 : overflow PASS
+- 430 : overflow PASS
+- 768 : overflow PASS
+- 1024 : overflow PASS
+- 1440 : overflow PASS
+- HORIZONTAL_OVERFLOW_PAGES = 0
+
+# Accessibilité
+- critical : 0 (axe-core non disponible ; contrôle manuel + computed styles)
+- serious : 0
+- contrastes : `.step` blanc sur fond #191c19
+- alt : toutes les images de contenu ont un alt significatif
+- clavier : skip-link, focus visible, lightbox Escape / flèches / fermeture
+
+# SEO
+- H1 : 1 par page de contenu
+- titles / descriptions : uniques
+- canonicals : domaine GitHub Pages
+- sitemap : cohérent, fiche 2023 absente
+- robots : noindex conservé sur la fiche 2023
+- JSON-LD : parse OK, pas d’aggregateRating
+- jargon SEO interne retiré du site public (`SEO-LINK-BUILDING.md`)
+
+# Performance
+- Lighthouse non lancé (non installé dans l’environnement)
+- images web ~220–410 Ko, pas d’originaux 5–10 Mo publiés
+- JS lightbox < 3 Ko, créé au clic
+- LCP accueil : photo Avant en `fetchpriority="high"`, sans lazy
+
+# Tests techniques
+BROKEN_IMAGES = 0
+BROKEN_INTERNAL_LINKS = 0
+MISSING_LOCAL_ASSETS = 0
+LOCAL_PAGE_404 = 0
+LOCAL_ASSET_404 = 0
+CONSOLE_ERRORS = 0
+JS_RUNTIME_ERRORS = 0
+HORIZONTAL_OVERFLOW_PAGES = 0
+PAGES_WITHOUT_H1 = 0
+PAGES_WITH_MULTIPLE_H1 = 0
+ACCESSIBILITY_CRITICAL = 0
+ACCESSIBILITY_SERIOUS = 0
+BLURRY_UPSCALED_IMAGES = 0
+PUBLIC_SENSITIVE_FILES = 0
+JSON_LD_PARSE_ERRORS = 0
 
 # SEO safety
 CHANTIER_2023_NOINDEX = OK
 CHANTIER_2023_HORS_SITEMAP = OK
 
-# Git
-- SHA initial : `fdd500c206e702f9dcba5fc86cabc1ef5be3e666`
-- SHA final : (à compléter après commit)
-- push : (à compléter)
-- build GitHub Pages : (à compléter)
+# Fichiers modifiés
+- `.gitignore`, `robots.txt`, `styles.css`, `assets/js/gallery.js`, `index.html` et 11 autres HTML
+- suppression : `SEO-LINK-BUILDING.md`, `assets/chantiers/2023/*.jpg`, `assets/logo-panthere.jpg`
+- ajout : `scripts/audit_site.py`, `scripts/browser_audit.py`, `reports/site_audit_static.json`, `reports/site_audit_browser.json`, `reports/site_audit/screenshots/`
 
-# Résultat final
-BROKEN_IMAGES = 0
-BROKEN_INTERNAL_LINKS = 0
-PHOTOS_ORIGINALES_RECUPEREES = 26
-PHOTOS_2023_AFFICHEES = 8
-BUILD_PAGES = (à compléter)
+# Commandes exécutées
+- `git fetch` / `git pull --ff-only origin main`
+- `git branch backup/site-audit-20260814-1520`
+- `python scripts/audit_site.py`
+- `python -m http.server 8000`
+- `python scripts/browser_audit.py` (Playwright, 12 pages × 5 viewports)
+- contrôles cropped Avant/Après, `.step`, lightbox Escape, menu 768
 
-# Actions restantes
-- Vérifier le build GitHub Pages après push.
-- Les 5 photos non attribuées peuvent être ajoutées plus tard si le propriétaire confirme le chantier / la prestation.
-- La fiche chantier 2023 reste volontairement `noindex` et hors sitemap jusqu’à validation globale du site.
+# Git final
+- FINAL_SHA : (après commit)
+- commit : à pousser
+- push : à vérifier
+- build GitHub Pages : à vérifier
+- URL publique : https://redav42-star.github.io/platrerie-peinture-forezienne/
+
+# Reste à faire
+- POINT_A_VALIDER_PAR_PROPRIETAIRE : mentions légales / assurance / décennale non inventées, donc absentes
+- 5 photos non attribuées restent en réserve
+- Lighthouse peut être lancé plus tard si souhaité ; non bloquant ici
+- la fiche chantier 2023 reste volontairement noindex
