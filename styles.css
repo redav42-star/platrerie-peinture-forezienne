@@ -58,8 +58,9 @@ section{padding:70px 0}
 .dark .section-head p{color:#ccd2cc}
 .dark .eyebrow,.cta-box .eyebrow{color:#8fdb89}
 .dark .btn-outline{background:#fff;color:var(--ink);border-color:#fff}
-.step{display:grid;grid-template-columns:42px minmax(0,1fr);gap:12px;padding:15px;border-radius:14px;background:#191c19;border:1px solid #303630}
-.step b{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--green)}
+.step{display:grid;grid-template-columns:42px minmax(0,1fr);gap:12px;padding:15px;border-radius:14px;background:#191c19;border:1px solid #303630;color:#e9eee9}
+.step strong{color:#fff}
+.step b{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--green);color:#fff}
 .steps{display:grid;gap:12px}
 .review-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
 .review{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;min-width:0}
