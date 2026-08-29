@@ -33,15 +33,12 @@ def main() -> None:
                 page.screenshot(path=str(SHOT / f"{slug}-photos.png"), full_page=False)
             data = page.evaluate(
                 """() => {
-                  const nav = [...document.querySelectorAll('nav a')];
                   const step = document.querySelector('.step');
                   const imgs = [...document.querySelectorAll('.before-after img, .case-gallery img')].slice(0, 2);
                   const cs = step ? getComputedStyle(step) : null;
                   const td = step ? getComputedStyle(step.querySelector('div') || step) : null;
                   return {
                     overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth + 2,
-                    nav: nav.map(a => a.innerText.trim()),
-                    navVisible: nav.filter(a => a.offsetParent !== null || a.getClientRects().length).length,
                     stepBg: cs && cs.backgroundColor,
                     stepColor: td && td.color,
                     photos: imgs.map(i => ({src: i.currentSrc, nw: i.naturalWidth, nh: i.naturalHeight, w: i.clientWidth, h: i.clientHeight, complete: i.complete})),
@@ -49,6 +46,20 @@ def main() -> None:
                   };
                 }"""
             )
+            page.locator(".menu-toggle").click()
+            page.wait_for_timeout(250)
+            nav = page.evaluate(
+                """() => {
+                  const nav = [...document.querySelectorAll('nav a')];
+                  return {
+                    nav: nav.map(a => a.innerText.trim()),
+                    navVisible: nav.filter(a => a.offsetParent !== null || a.getClientRects().length).length
+                  };
+                }"""
+            )
+            data.update(nav)
+            page.locator(".menu-close").click()
+            page.wait_for_timeout(150)
             print(slug, data)
             if data["overflow"]:
                 fails.append(f"{slug} overflow")
