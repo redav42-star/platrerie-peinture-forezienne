@@ -1,0 +1,110 @@
+{
+  "empty_black_frames": [],
+  "BLACK_EMPTY_FRAME_COUNT": 0,
+  "runs": [
+    {
+      "label": "desktop",
+      "ready": true,
+      "story_h": 1800,
+      "view_h": 900,
+      "distance": 900,
+      "errors": [],
+      "metrics": {
+        "0": {
+          "file": "desktop-00.png",
+          "mean": 67.99,
+          "center_mean": 77.49,
+          "center_var": 1665.13,
+          "black_ratio": 0.0076,
+          "empty_black": false
+        },
+        "25": {
+          "file": "desktop-25.png",
+          "mean": 78.0,
+          "center_mean": 96.15,
+          "center_var": 2452.34,
+          "black_ratio": 0.0079,
+          "empty_black": false
+        },
+        "50": {
+          "file": "desktop-50.png",
+          "mean": 91.94,
+          "center_mean": 114.0,
+          "center_var": 2814.52,
+          "black_ratio": 0.0079,
+          "empty_black": false
+        },
+        "75": {
+          "file": "desktop-75.png",
+          "mean": 104.53,
+          "center_mean": 130.85,
+          "center_var": 2623.53,
+          "black_ratio": 0.0002,
+          "empty_black": false
+        },
+        "100": {
+          "file": "desktop-100.png",
+          "mean": 132.88,
+          "center_mean": 158.57,
+          "center_var": 1632.79,
+          "black_ratio": 0.0,
+          "empty_black": false
+        }
+      },
+      "video": "C:\\Users\\redav\\Projects\\platrerie-peinture-forezienne\\reports\\paint-v2\\scroll-demo-desktop.webm",
+      "mp4": "C:\\Users\\redav\\Projects\\platrerie-peinture-forezienne\\reports\\paint-v2\\scroll-demo-desktop.mp4"
+    },
+    {
+      "label": "mobile",
+      "ready": true,
+      "story_h": 1424,
+      "view_h": 812,
+      "distance": 612,
+      "errors": [],
+      "metrics": {
+        "0": {
+          "file": "mobile-00.png",
+          "mean": 75.39,
+          "center_mean": 76.3,
+          "center_var": 2582.52,
+          "black_ratio": 0.0082,
+          "empty_black": false
+        },
+        "25": {
+          "file": "mobile-25.png",
+          "mean": 76.69,
+          "center_mean": 92.14,
+          "center_var": 3886.98,
+          "black_ratio": 0.0088,
+          "empty_black": false
+        },
+        "50": {
+          "file": "mobile-50.png",
+          "mean": 89.6,
+          "center_mean": 93.75,
+          "center_var": 3148.01,
+          "black_ratio": 0.0087,
+          "empty_black": false
+        },
+        "75": {
+          "file": "mobile-75.png",
+          "mean": 102.73,
+          "center_mean": 128.47,
+          "center_var": 3679.32,
+          "black_ratio": 0.0054,
+          "empty_black": false
+        },
+        "100": {
+          "file": "mobile-100.png",
+          "mean": 117.44,
+          "center_mean": 135.26,
+          "center_var": 2815.9,
+          "black_ratio": 0.0007,
+          "empty_black": false
+        }
+      },
+      "video": "C:\\Users\\redav\\Projects\\platrerie-peinture-forezienne\\reports\\paint-v2\\scroll-demo-mobile.webm",
+      "mp4": "C:\\Users\\redav\\Projects\\platrerie-peinture-forezienne\\reports\\paint-v2\\scroll-demo-mobile.mp4"
+    }
+  ]
+}
