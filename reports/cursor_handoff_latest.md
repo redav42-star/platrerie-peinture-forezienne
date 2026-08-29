@@ -1,6 +1,7 @@
 # Verdict
 SITE_FINAL_QA_FIXED
 LIGHTHOUSE_MOBILE_OPTIMIZED
+DESIGN_PHASE1_PREMIUM_COMPLETE — voir `reports/design_phase1_premium_latest.md`
 
 # Modele / execution
 - Grok 4.6 High Fast

@@ -145,18 +145,18 @@
   "images": [
     {
       "page": "bandes-a-joints-jointeur.html",
-      "src": "assets/logo-panthere.png",
+      "src": "assets/logo-premium.webp",
       "alt": "Panthère - Plâtrerie Peinture Forézienne",
-      "width_attr": "64",
-      "height_attr": "64",
+      "width_attr": "660",
+      "height_attr": "225",
       "loading": null,
       "exists": true,
-      "bytes": 4366,
+      "bytes": 15844,
       "px": [
-        240,
-        240
+        660,
+        225
       ],
-      "format": "JPEG",
+      "format": "WEBP",
       "readable": true,
       "exif": false
     },
@@ -196,18 +196,18 @@
     },
     {
       "page": "chantier-renovation-appartement-saint-etienne-2023.html",
-      "src": "assets/logo-panthere.png",
+      "src": "assets/logo-premium.webp",
       "alt": "Panthère - Plâtrerie Peinture Forézienne",
-      "width_attr": "64",
-      "height_attr": "64",
+      "width_attr": "660",
+      "height_attr": "225",
       "loading": null,
       "exists": true,
-      "bytes": 4366,
+      "bytes": 15844,
       "px": [
-        240,
-        240
+        660,
+        225
       ],
-      "format": "JPEG",
+      "format": "WEBP",
       "readable": true,
       "exif": false
     },
@@ -349,18 +349,18 @@
     },
     {
       "page": "cloisons-faux-plafonds.html",
-      "src": "assets/logo-panthere.png",
+      "src": "assets/logo-premium.webp",
       "alt": "Panthère - Plâtrerie Peinture Forézienne",
-      "width_attr": "64",
-      "height_attr": "64",
+      "width_attr": "660",
+      "height_attr": "225",
       "loading": null,
       "exists": true,
-      "bytes": 4366,
+      "bytes": 15844,
       "px": [
-        240,
-        240
+        660,
+        225
       ],
-      "format": "JPEG",
+      "format": "WEBP",
       "readable": true,
       "exif": false
     },
@@ -400,86 +400,86 @@
     },
     {
       "page": "contact.html",
-      "src": "assets/logo-panthere.png",
+      "src": "assets/logo-premium.webp",
       "alt": "Panthère - Plâtrerie Peinture Forézienne",
-      "width_attr": "64",
-      "height_attr": "64",
+      "width_attr": "660",
+      "height_attr": "225",
       "loading": null,
       "exists": true,
-      "bytes": 4366,
+      "bytes": 15844,
       "px": [
-        240,
-        240
+        660,
+        225
       ],
-      "format": "JPEG",
+      "format": "WEBP",
       "readable": true,
       "exif": false
     },
     {
       "page": "contact.html",
-      "src": "assets/logo-panthere.png",
+      "src": "assets/logo-premium.webp",
       "alt": "Logo Plâtrerie Peinture Forézienne",
-      "width_attr": "240",
-      "height_attr": "240",
+      "width_attr": "660",
+      "height_attr": "225",
       "loading": null,
       "exists": true,
-      "bytes": 4366,
+      "bytes": 15844,
       "px": [
-        240,
-        240
+        660,
+        225
       ],
-      "format": "JPEG",
+      "format": "WEBP",
       "readable": true,
       "exif": false
     },
     {
       "page": "degats-des-eaux.html",
-      "src": "assets/logo-panthere.png",
+      "src": "assets/logo-premium.webp",
       "alt": "Panthère - Plâtrerie Peinture Forézienne",
-      "width_attr": "64",
-      "height_attr": "64",
+      "width_attr": "660",
+      "height_attr": "225",
       "loading": null,
       "exists": true,
-      "bytes": 4366,
+      "bytes": 15844,
       "px": [
-        240,
-        240
+        660,
+        225
       ],
-      "format": "JPEG",
+      "format": "WEBP",
       "readable": true,
       "exif": false
     },
     {
       "page": "index.html",
-      "src": "assets/logo-panthere.png",
+      "src": "assets/logo-premium.webp",
       "alt": "Panthère - Plâtrerie Peinture Forézienne",
-      "width_attr": "64",
-      "height_attr": "64",
+      "width_attr": "660",
+      "height_attr": "225",
       "loading": null,
       "exists": true,
-      "bytes": 4366,
+      "bytes": 15844,
       "px": [
-        240,
-        240
+        660,
+        225
       ],
-      "format": "JPEG",
+      "format": "WEBP",
       "readable": true,
       "exif": false
     },
     {
       "page": "index.html",
-      "src": "assets/logo-panthere.png",
+      "src": "assets/logo-premium.webp",
       "alt": "Logo Plâtrerie Peinture Forézienne",
-      "width_attr": "240",
-      "height_attr": "240",
+      "width_attr": "660",
+      "height_attr": "225",
       "loading": null,
       "exists": true,
-      "bytes": 4366,
+      "bytes": 15844,
       "px": [
-        240,
-        240
+        660,
+        225
       ],
-      "format": "JPEG",
+      "format": "WEBP",
       "readable": true,
       "exif": false
     },
@@ -519,18 +519,18 @@
     },
     {
       "page": "peinture-airless.html",
-      "src": "assets/logo-panthere.png",
+      "src": "assets/logo-premium.webp",
       "alt": "Panthère - Plâtrerie Peinture Forézienne",
-      "width_attr": "64",
-      "height_attr": "64",
+      "width_attr": "660",
+      "height_attr": "225",
       "loading": null,
       "exists": true,
-      "bytes": 4366,
+      "bytes": 15844,
       "px": [
-        240,
-        240
+        660,
+        225
       ],
-      "format": "JPEG",
+      "format": "WEBP",
       "readable": true,
       "exif": false
     },
@@ -638,18 +638,18 @@
     },
     {
       "page": "platrerie.html",
-      "src": "assets/logo-panthere.png",
+      "src": "assets/logo-premium.webp",
       "alt": "Panthère - Plâtrerie Peinture Forézienne",
-      "width_attr": "64",
-      "height_attr": "64",
+      "width_attr": "660",
+      "height_attr": "225",
       "loading": null,
       "exists": true,
-      "bytes": 4366,
+      "bytes": 15844,
       "px": [
-        240,
-        240
+        660,
+        225
       ],
-      "format": "JPEG",
+      "format": "WEBP",
       "readable": true,
       "exif": false
     },
@@ -689,52 +689,52 @@
     },
     {
       "page": "professionnels.html",
-      "src": "assets/logo-panthere.png",
+      "src": "assets/logo-premium.webp",
       "alt": "Panthère - Plâtrerie Peinture Forézienne",
-      "width_attr": "64",
-      "height_attr": "64",
+      "width_attr": "660",
+      "height_attr": "225",
       "loading": null,
       "exists": true,
-      "bytes": 4366,
+      "bytes": 15844,
       "px": [
-        240,
-        240
+        660,
+        225
       ],
-      "format": "JPEG",
+      "format": "WEBP",
       "readable": true,
       "exif": false
     },
     {
       "page": "quand-repeindre-apres-degat-des-eaux.html",
-      "src": "assets/logo-panthere.png",
+      "src": "assets/logo-premium.webp",
       "alt": "Panthère - Plâtrerie Peinture Forézienne",
-      "width_attr": "64",
-      "height_attr": "64",
+      "width_attr": "660",
+      "height_attr": "225",
       "loading": null,
       "exists": true,
-      "bytes": 4366,
+      "bytes": 15844,
       "px": [
-        240,
-        240
+        660,
+        225
       ],
-      "format": "JPEG",
+      "format": "WEBP",
       "readable": true,
       "exif": false
     },
     {
       "page": "ratissage-enduits.html",
-      "src": "assets/logo-panthere.png",
+      "src": "assets/logo-premium.webp",
       "alt": "Panthère - Plâtrerie Peinture Forézienne",
-      "width_attr": "64",
-      "height_attr": "64",
+      "width_attr": "660",
+      "height_attr": "225",
       "loading": null,
       "exists": true,
-      "bytes": 4366,
+      "bytes": 15844,
       "px": [
-        240,
-        240
+        660,
+        225
       ],
-      "format": "JPEG",
+      "format": "WEBP",
       "readable": true,
       "exif": false
     },
@@ -791,18 +791,18 @@
     },
     {
       "page": "renovation-appartement.html",
-      "src": "assets/logo-panthere.png",
+      "src": "assets/logo-premium.webp",
       "alt": "Panthère - Plâtrerie Peinture Forézienne",
-      "width_attr": "64",
-      "height_attr": "64",
+      "width_attr": "660",
+      "height_attr": "225",
       "loading": null,
       "exists": true,
-      "bytes": 4366,
+      "bytes": 15844,
       "px": [
-        240,
-        240
+        660,
+        225
       ],
-      "format": "JPEG",
+      "format": "WEBP",
       "readable": true,
       "exif": false
     },
@@ -845,246 +845,7 @@
   "broken_internal_links": [],
   "missing_local_assets": [],
   "missing_alts": [],
-  "tiny_or_thumbnail": [
-    {
-      "page": "bandes-a-joints-jointeur.html",
-      "src": "assets/logo-panthere.png",
-      "alt": "Panthère - Plâtrerie Peinture Forézienne",
-      "width_attr": "64",
-      "height_attr": "64",
-      "loading": null,
-      "exists": true,
-      "bytes": 4366,
-      "px": [
-        240,
-        240
-      ],
-      "format": "JPEG",
-      "readable": true,
-      "exif": false
-    },
-    {
-      "page": "chantier-renovation-appartement-saint-etienne-2023.html",
-      "src": "assets/logo-panthere.png",
-      "alt": "Panthère - Plâtrerie Peinture Forézienne",
-      "width_attr": "64",
-      "height_attr": "64",
-      "loading": null,
-      "exists": true,
-      "bytes": 4366,
-      "px": [
-        240,
-        240
-      ],
-      "format": "JPEG",
-      "readable": true,
-      "exif": false
-    },
-    {
-      "page": "cloisons-faux-plafonds.html",
-      "src": "assets/logo-panthere.png",
-      "alt": "Panthère - Plâtrerie Peinture Forézienne",
-      "width_attr": "64",
-      "height_attr": "64",
-      "loading": null,
-      "exists": true,
-      "bytes": 4366,
-      "px": [
-        240,
-        240
-      ],
-      "format": "JPEG",
-      "readable": true,
-      "exif": false
-    },
-    {
-      "page": "contact.html",
-      "src": "assets/logo-panthere.png",
-      "alt": "Panthère - Plâtrerie Peinture Forézienne",
-      "width_attr": "64",
-      "height_attr": "64",
-      "loading": null,
-      "exists": true,
-      "bytes": 4366,
-      "px": [
-        240,
-        240
-      ],
-      "format": "JPEG",
-      "readable": true,
-      "exif": false
-    },
-    {
-      "page": "contact.html",
-      "src": "assets/logo-panthere.png",
-      "alt": "Logo Plâtrerie Peinture Forézienne",
-      "width_attr": "240",
-      "height_attr": "240",
-      "loading": null,
-      "exists": true,
-      "bytes": 4366,
-      "px": [
-        240,
-        240
-      ],
-      "format": "JPEG",
-      "readable": true,
-      "exif": false
-    },
-    {
-      "page": "degats-des-eaux.html",
-      "src": "assets/logo-panthere.png",
-      "alt": "Panthère - Plâtrerie Peinture Forézienne",
-      "width_attr": "64",
-      "height_attr": "64",
-      "loading": null,
-      "exists": true,
-      "bytes": 4366,
-      "px": [
-        240,
-        240
-      ],
-      "format": "JPEG",
-      "readable": true,
-      "exif": false
-    },
-    {
-      "page": "index.html",
-      "src": "assets/logo-panthere.png",
-      "alt": "Panthère - Plâtrerie Peinture Forézienne",
-      "width_attr": "64",
-      "height_attr": "64",
-      "loading": null,
-      "exists": true,
-      "bytes": 4366,
-      "px": [
-        240,
-        240
-      ],
-      "format": "JPEG",
-      "readable": true,
-      "exif": false
-    },
-    {
-      "page": "index.html",
-      "src": "assets/logo-panthere.png",
-      "alt": "Logo Plâtrerie Peinture Forézienne",
-      "width_attr": "240",
-      "height_attr": "240",
-      "loading": null,
-      "exists": true,
-      "bytes": 4366,
-      "px": [
-        240,
-        240
-      ],
-      "format": "JPEG",
-      "readable": true,
-      "exif": false
-    },
-    {
-      "page": "peinture-airless.html",
-      "src": "assets/logo-panthere.png",
-      "alt": "Panthère - Plâtrerie Peinture Forézienne",
-      "width_attr": "64",
-      "height_attr": "64",
-      "loading": null,
-      "exists": true,
-      "bytes": 4366,
-      "px": [
-        240,
-        240
-      ],
-      "format": "JPEG",
-      "readable": true,
-      "exif": false
-    },
-    {
-      "page": "platrerie.html",
-      "src": "assets/logo-panthere.png",
-      "alt": "Panthère - Plâtrerie Peinture Forézienne",
-      "width_attr": "64",
-      "height_attr": "64",
-      "loading": null,
-      "exists": true,
-      "bytes": 4366,
-      "px": [
-        240,
-        240
-      ],
-      "format": "JPEG",
-      "readable": true,
-      "exif": false
-    },
-    {
-      "page": "professionnels.html",
-      "src": "assets/logo-panthere.png",
-      "alt": "Panthère - Plâtrerie Peinture Forézienne",
-      "width_attr": "64",
-      "height_attr": "64",
-      "loading": null,
-      "exists": true,
-      "bytes": 4366,
-      "px": [
-        240,
-        240
-      ],
-      "format": "JPEG",
-      "readable": true,
-      "exif": false
-    },
-    {
-      "page": "quand-repeindre-apres-degat-des-eaux.html",
-      "src": "assets/logo-panthere.png",
-      "alt": "Panthère - Plâtrerie Peinture Forézienne",
-      "width_attr": "64",
-      "height_attr": "64",
-      "loading": null,
-      "exists": true,
-      "bytes": 4366,
-      "px": [
-        240,
-        240
-      ],
-      "format": "JPEG",
-      "readable": true,
-      "exif": false
-    },
-    {
-      "page": "ratissage-enduits.html",
-      "src": "assets/logo-panthere.png",
-      "alt": "Panthère - Plâtrerie Peinture Forézienne",
-      "width_attr": "64",
-      "height_attr": "64",
-      "loading": null,
-      "exists": true,
-      "bytes": 4366,
-      "px": [
-        240,
-        240
-      ],
-      "format": "JPEG",
-      "readable": true,
-      "exif": false
-    },
-    {
-      "page": "renovation-appartement.html",
-      "src": "assets/logo-panthere.png",
-      "alt": "Panthère - Plâtrerie Peinture Forézienne",
-      "width_attr": "64",
-      "height_attr": "64",
-      "loading": null,
-      "exists": true,
-      "bytes": 4366,
-      "px": [
-        240,
-        240
-      ],
-      "format": "JPEG",
-      "readable": true,
-      "exif": false
-    }
-  ],
+  "tiny_or_thumbnail": [],
   "duplicate_titles": [],
   "duplicate_descriptions": [],
   "pages_without_h1": [],

@@ -57,7 +57,8 @@ def main() -> None:
             if data["navVisible"] < 6:
                 fails.append(f"{slug} nav {data['navVisible']}")
             if slug == "degats":
-                if data["stepBg"] != "rgb(25, 28, 25)" or data["stepColor"] != "rgb(255, 255, 255)":
+                dark = data["stepBg"] and data["stepBg"].startswith("rgb(") and all(int(x) < 50 for x in data["stepBg"][4:-1].split(","))
+                if not dark or data["stepColor"] != "rgb(255, 255, 255)":
                     fails.append(f"{slug} step {data['stepBg']} {data['stepColor']}")
             if slug in {"accueil", "renovation", "chantier-2023"}:
                 if not data["photos"] or any(p["nw"] < 600 for p in data["photos"]):

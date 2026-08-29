@@ -9,7 +9,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -40,7 +40,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -55,7 +55,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -70,7 +70,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -123,7 +123,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -138,7 +138,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -153,7 +153,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -179,7 +179,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -210,7 +210,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -225,7 +225,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -240,7 +240,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -293,7 +293,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -308,7 +308,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -323,7 +323,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -349,15 +349,15 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
       "avant": {
         "src": "",
         "nw": 0,
-        "dw": 357,
-        "dh": 635
+        "dw": 355,
+        "dh": 631
       }
     },
     {
@@ -380,7 +380,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -395,7 +395,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -410,7 +410,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -439,8 +439,8 @@
       "avant": {
         "src": "http://127.0.0.1:8000/assets/chantiers/display/20230530_095335.webp",
         "nw": 675,
-        "dw": 357,
-        "dh": 635
+        "dw": 355,
+        "dh": 631
       }
     },
     {
@@ -463,7 +463,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -478,7 +478,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -493,7 +493,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -519,13 +519,13 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
       "avant": {
-        "src": "http://127.0.0.1:8000/assets/chantiers/display/20230530_095335.webp",
-        "nw": 675,
+        "src": "",
+        "nw": 0,
         "dw": 378,
         "dh": 538
       }
@@ -550,7 +550,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -565,7 +565,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -580,7 +580,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -633,7 +633,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -648,7 +648,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -663,7 +663,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -689,13 +689,13 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
       "avant": {
-        "src": "http://127.0.0.1:8000/assets/chantiers/display/20230530_095335.webp",
-        "nw": 675,
+        "src": "",
+        "nw": 0,
         "dw": 378,
         "dh": 630
       }
@@ -720,7 +720,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -735,7 +735,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -750,7 +750,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -803,7 +803,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -818,7 +818,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
@@ -833,7 +833,7 @@
       "brokenImgs": [],
       "navCount": 6,
       "stepColor": {
-        "bg": "rgb(25, 28, 25)",
+        "bg": "rgb(36, 31, 28)",
         "color": "rgb(255, 255, 255)",
         "strong": "rgb(255, 255, 255)"
       },
