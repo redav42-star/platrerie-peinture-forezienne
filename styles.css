@@ -110,11 +110,11 @@ h1{font-size:clamp(2.15rem,4.8vw,3.55rem);line-height:1.12;margin:14px 0 20px;ma
 .has-js .airless-story.airless-ready .airless-stage{position:sticky;top:0;height:100svh;min-height:100svh;overflow:hidden}
 .airless-scene{
   position:absolute;inset:0;z-index:1;
-  background:#171714 url("assets/chantiers/display/20230530_095338.webp") 38% 73%/cover no-repeat
+  background:#171714 url("assets/chantiers/display/20230530_095338.webp") 38% 16%/cover no-repeat
 }
 .airless-base,.airless-before,.airless-reveal{position:absolute;inset:0;margin:0}
-.airless-base img{width:100%;height:100%;max-width:none;object-fit:cover;object-position:32% 76%;display:block}
-.airless-before img{width:100%;height:100%;max-width:none;object-fit:cover;object-position:38% 73%;display:block}
+.airless-base img{width:100%;height:100%;max-width:none;object-fit:cover;object-position:26% 28%;display:block}
+.airless-before img{width:100%;height:100%;max-width:none;object-fit:cover;object-position:38% 16%;display:block}
 .airless-story .airless-base.hero-photo,.airless-story .airless-base img{min-height:100%;height:100%;animation:none;clip-path:none}
 .airless-before{z-index:2;opacity:0;pointer-events:none}
 .airless-before img{filter:brightness(.92) saturate(.9) contrast(1.03)}

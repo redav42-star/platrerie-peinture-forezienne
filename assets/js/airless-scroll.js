@@ -16,15 +16,14 @@
   var afterSrc = new Image();
   var readyImg = false;
 
-  /* Floor first, then windows/walls, then fireplace — no vertical wipe. */
+  /* Walls first, windows later — avoids fighting frames between the two shots. */
   var SEEDS = [
-    { x: 0.74, y: 0.84, rx: 0.42, ry: 0.2, rot: -0.08, at: 0 },
-    { x: 0.56, y: 0.86, rx: 0.4, ry: 0.18, rot: 0.06, at: 0.05 },
-    { x: 0.4, y: 0.88, rx: 0.34, ry: 0.16, rot: -0.04, at: 0.1 },
-    { x: 0.68, y: 0.54, rx: 0.3, ry: 0.26, rot: 0.1, at: 0.2 },
-    { x: 0.52, y: 0.5, rx: 0.28, ry: 0.24, rot: -0.06, at: 0.3 },
-    { x: 0.3, y: 0.6, rx: 0.28, ry: 0.3, rot: 0.08, at: 0.42 },
-    { x: 0.22, y: 0.8, rx: 0.26, ry: 0.2, rot: -0.1, at: 0.52 }
+    { x: 0.36, y: 0.48, rx: 0.32, ry: 0.34, rot: 0.06, at: 0 },
+    { x: 0.48, y: 0.36, rx: 0.28, ry: 0.28, rot: -0.05, at: 0.1 },
+    { x: 0.42, y: 0.64, rx: 0.3, ry: 0.26, rot: 0.04, at: 0.18 },
+    { x: 0.6, y: 0.4, rx: 0.3, ry: 0.3, rot: -0.06, at: 0.34 },
+    { x: 0.72, y: 0.52, rx: 0.28, ry: 0.28, rot: 0.05, at: 0.46 },
+    { x: 0.54, y: 0.7, rx: 0.34, ry: 0.22, rot: 0.02, at: 0.56 }
   ];
 
   function clamp(v, a, b) {
@@ -50,7 +49,7 @@
       return;
     }
     var t = ease(clamp((p - 0.015) / 0.97, 0, 1));
-    mctx.filter = mobile ? "blur(14px)" : "blur(16px)";
+    mctx.filter = mobile ? "blur(12px)" : "blur(14px)";
     var i;
     for (i = 0; i < SEEDS.length; i++) {
       var s = SEEDS[i];
@@ -67,7 +66,7 @@
     if (t > 0.7) {
       var fade = (t - 0.7) / 0.3;
       var R = Math.hypot(w, h) * (0.38 + fade * 0.72);
-      var g = mctx.createRadialGradient(w * 0.5, h * 0.78, R * 0.08, w * 0.48, h * 0.62, R);
+      var g = mctx.createRadialGradient(w * 0.5, h * 0.46, R * 0.08, w * 0.48, h * 0.48, R);
       g.addColorStop(0, "rgba(255,255,255," + fade.toFixed(3) + ")");
       g.addColorStop(0.68, "rgba(255,255,255," + (fade * 0.7).toFixed(3) + ")");
       g.addColorStop(1, "rgba(255,255,255,0)");
@@ -86,7 +85,7 @@
     rctx.globalCompositeOperation = "source-over";
     rctx.drawImage(mask, 0, 0);
     rctx.globalCompositeOperation = "source-in";
-    coverDraw(rctx, afterSrc, w, h, 0.32, 0.76);
+    coverDraw(rctx, afterSrc, w, h, 0.26, 0.28);
     rctx.globalCompositeOperation = "source-over";
   }
 
