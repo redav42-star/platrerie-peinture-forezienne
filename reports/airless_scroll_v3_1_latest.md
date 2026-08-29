@@ -13,7 +13,7 @@ Le site public reste le rollback Mùn (`22d3008`).
 | | |
 |---|---|
 | Branche | `prototype/airless-scroll-v3-1` |
-| SHA | *(renseigné après commit)* |
+| SHA | `2e651b9` |
 | Base | `c4e0958` (V3) / public `22d3008` |
 | Photo avant | `assets/chantiers/display/20230530_095338.webp` — salon en chantier, cheminée protégée, outils au sol |
 | Photo après | `assets/chantiers/display/20230922_120855.webp` — même salon rénové, parquet, cheminée, portes-fenêtres |
