@@ -13,7 +13,7 @@ Le site public reste `22d3008`.
 | | |
 |---|---|
 | Branche | `prototype/airless-scroll-v4-1` |
-| SHA | *(renseigné après commit)* |
+| SHA | `506ca68` |
 | Base | V4 `fa7243c` / public `22d3008` |
 | Photo avant | `20230530_095338` — **même salon**, recadré haut : murs, fenêtres, corniches (plus le plancher encombré) |
 | Photo après | `20230922_120855` — même salon fini, recadré sur le volume (cheminée, ouvertures, murs) |
