@@ -5,6 +5,9 @@
   var reveal = document.querySelector(".airless-reveal");
   var afterImg = document.querySelector(".airless-base img");
   if (!story || !stage || !before || !reveal || !afterImg) return;
+  before.style.opacity = "1";
+  var beforeImg = before.querySelector("img");
+  if (beforeImg) beforeImg.setAttribute("fetchpriority", "high");
 
   var reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
   var mobileMq = window.matchMedia("(max-width: 900px)");
@@ -16,15 +19,7 @@
   var afterSrc = new Image();
   var readyImg = false;
 
-  /* Walls first, windows later — avoids fighting frames between the two shots. */
-  var SEEDS = [
-    { x: 0.36, y: 0.48, rx: 0.32, ry: 0.34, rot: 0.06, at: 0 },
-    { x: 0.48, y: 0.36, rx: 0.28, ry: 0.28, rot: -0.05, at: 0.1 },
-    { x: 0.42, y: 0.64, rx: 0.3, ry: 0.26, rot: 0.04, at: 0.18 },
-    { x: 0.6, y: 0.4, rx: 0.3, ry: 0.3, rot: -0.06, at: 0.34 },
-    { x: 0.72, y: 0.52, rx: 0.28, ry: 0.28, rot: 0.05, at: 0.46 },
-    { x: 0.54, y: 0.7, rx: 0.34, ry: 0.22, rot: 0.02, at: 0.56 }
-  ];
+  /* The finish advances as one connected, irregular front so architectural elements never float as isolated islands. */
 
   function clamp(v, a, b) {
     return v < a ? a : v > b ? b : v;
@@ -44,36 +39,34 @@
 
   function paintMask(p, w, h, mobile) {
     mctx.clearRect(0, 0, w, h);
-    if (p < 0.015) {
+    if (p < 0.012) {
       mctx.filter = "none";
       return;
     }
-    var t = ease(clamp((p - 0.015) / 0.97, 0, 1));
-    mctx.filter = mobile ? "blur(12px)" : "blur(14px)";
-    var i;
-    for (i = 0; i < SEEDS.length; i++) {
-      var s = SEEDS[i];
-      var local = clamp((t - s.at) / 0.36, 0, 1);
-      if (local <= 0) continue;
-      var grow = ease(local);
-      var rx = s.rx * w * (0.4 + grow * 0.95);
-      var ry = s.ry * h * (0.5 + grow * 0.95);
-      mctx.beginPath();
-      mctx.ellipse(s.x * w, s.y * h, rx, ry, s.rot, 0, Math.PI * 2);
-      mctx.fillStyle = "rgba(255,255,255," + (0.78 + grow * 0.22).toFixed(3) + ")";
-      mctx.fill();
+    var t = ease(clamp((p - 0.012) / 0.976, 0, 1));
+    var front = w * (-0.14 + t * 1.30);
+    var step = Math.max(8, Math.round(h / 52));
+    mctx.filter = mobile ? "blur(8px)" : "blur(10px)";
+    mctx.fillStyle = "rgba(255,255,255,.98)";
+    mctx.beginPath();
+    mctx.moveTo(-w * 0.12, -h * 0.08);
+    for (var y = -h * 0.08; y <= h * 1.08; y += step) {
+      var yn = y / h;
+      var wave = Math.sin(yn * Math.PI * 3.2 + 0.8) * w * 0.045;
+      wave += Math.sin(yn * Math.PI * 8.1 + 1.7) * w * 0.016;
+      wave += Math.sin(yn * Math.PI * 15.4 + 0.3) * w * 0.007;
+      var diagonal = (0.48 - yn) * w * 0.09;
+      mctx.lineTo(front + wave + diagonal, y);
     }
-    if (t > 0.7) {
-      var fade = (t - 0.7) / 0.3;
-      var R = Math.hypot(w, h) * (0.38 + fade * 0.72);
-      var g = mctx.createRadialGradient(w * 0.5, h * 0.46, R * 0.08, w * 0.48, h * 0.48, R);
-      g.addColorStop(0, "rgba(255,255,255," + fade.toFixed(3) + ")");
-      g.addColorStop(0.68, "rgba(255,255,255," + (fade * 0.7).toFixed(3) + ")");
-      g.addColorStop(1, "rgba(255,255,255,0)");
-      mctx.fillStyle = g;
+    mctx.lineTo(-w * 0.12, h * 1.08);
+    mctx.closePath();
+    mctx.fill();
+    mctx.filter = "none";
+    if (t > 0.94) {
+      var finish = ease((t - 0.94) / 0.06);
+      mctx.fillStyle = "rgba(255,255,255," + finish.toFixed(3) + ")";
       mctx.fillRect(0, 0, w, h);
     }
-    mctx.filter = "none";
   }
 
   function paintReveal(p) {
@@ -132,6 +125,7 @@
 
   function enable() {
     story.classList.add("airless-ready");
+    before.style.removeProperty("opacity");
     resize();
     last = -1;
     apply(progress());
