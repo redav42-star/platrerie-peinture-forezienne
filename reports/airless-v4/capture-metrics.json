@@ -12,37 +12,37 @@
       "metrics": {
         "0": {
           "file": "desktop-00.png",
-          "center_mean": 106.33,
-          "center_var": 2973.26,
-          "black_ratio": 0.059,
+          "center_mean": 100.93,
+          "center_var": 3161.0,
+          "black_ratio": 0.0759,
           "empty_black": false
         },
         "25": {
           "file": "desktop-25.png",
-          "center_mean": 109.43,
-          "center_var": 2318.24,
-          "black_ratio": 0.0377,
+          "center_mean": 104.79,
+          "center_var": 2568.66,
+          "black_ratio": 0.0323,
           "empty_black": false
         },
         "50": {
           "file": "desktop-50.png",
-          "center_mean": 111.36,
-          "center_var": 3132.65,
-          "black_ratio": 0.0243,
+          "center_mean": 115.07,
+          "center_var": 2951.09,
+          "black_ratio": 0.0018,
           "empty_black": false
         },
         "75": {
           "file": "desktop-75.png",
-          "center_mean": 110.08,
-          "center_var": 3264.22,
-          "black_ratio": 0.045,
+          "center_mean": 110.53,
+          "center_var": 3504.42,
+          "black_ratio": 0.0368,
           "empty_black": false
         },
         "100": {
           "file": "desktop-100.png",
-          "center_mean": 111.43,
-          "center_var": 3620.66,
-          "black_ratio": 0.0441,
+          "center_mean": 110.28,
+          "center_var": 3563.81,
+          "black_ratio": 0.0403,
           "empty_black": false
         }
       },
@@ -59,37 +59,37 @@
       "metrics": {
         "0": {
           "file": "mobile-00.png",
-          "center_mean": 118.93,
-          "center_var": 3159.08,
-          "black_ratio": 0.0411,
+          "center_mean": 118.38,
+          "center_var": 3297.27,
+          "black_ratio": 0.0393,
           "empty_black": false
         },
         "25": {
           "file": "mobile-25.png",
-          "center_mean": 123.37,
-          "center_var": 2977.62,
-          "black_ratio": 0.0361,
+          "center_mean": 119.32,
+          "center_var": 3050.63,
+          "black_ratio": 0.0293,
           "empty_black": false
         },
         "50": {
           "file": "mobile-50.png",
-          "center_mean": 122.7,
-          "center_var": 2659.53,
-          "black_ratio": 0.0251,
+          "center_mean": 122.72,
+          "center_var": 2751.18,
+          "black_ratio": 0.0105,
           "empty_black": false
         },
         "75": {
           "file": "mobile-75.png",
-          "center_mean": 125.66,
-          "center_var": 2573.97,
-          "black_ratio": 0.0245,
+          "center_mean": 125.98,
+          "center_var": 2652.35,
+          "black_ratio": 0.016,
           "empty_black": false
         },
         "100": {
           "file": "mobile-100.png",
-          "center_mean": 124.14,
-          "center_var": 2810.63,
-          "black_ratio": 0.0162,
+          "center_mean": 123.79,
+          "center_var": 2815.45,
+          "black_ratio": 0.0161,
           "empty_black": false
         }
       },
