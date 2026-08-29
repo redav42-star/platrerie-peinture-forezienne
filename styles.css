@@ -87,6 +87,14 @@ section{padding:clamp(56px,7vw,96px) 0}
 .step div,.step strong{color:#fff}
 .step b{display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:var(--accent);color:#fff;font-family:var(--sans);font-weight:600;font-size:13px}
 .steps{display:grid;gap:12px}
+.method{background:var(--paper)}
+.method .section-head{max-width:36rem;margin-bottom:clamp(40px,5vw,72px)}
+.method .steps{grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(40px,6vw,96px);align-items:start}
+.method .step{display:flex;flex-direction:column;align-items:flex-start;gap:0;padding:0;background:transparent;border:0;border-radius:0;color:inherit;min-width:0}
+.method .step div{color:var(--muted);font-weight:400;line-height:1.75;max-width:32ch;font-size:1.02rem}
+.method .step strong{display:block;color:var(--ink);font-family:var(--serif);font-weight:600;font-size:1.28rem;line-height:1.25;letter-spacing:-.02em;margin:4px 0 10px}
+.method .step b{display:block;width:auto;height:auto;border-radius:0;background:none;color:#D1C9BC;font-family:var(--serif);font-weight:600;font-size:clamp(4.5rem,8vw,7.5rem);line-height:.82;letter-spacing:-.04em;margin:0 0 8px;padding:0}
+.method .cta-box{margin-top:clamp(48px,7vw,88px)}
 .review-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
 .review{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;min-width:0;box-shadow:none}
 .stars{color:#B45309;letter-spacing:2px}
@@ -153,9 +161,14 @@ nav a.btn-green{padding:10px 16px}
   .split .grid-3{grid-template-columns:1fr}
   h1{max-width:none}
   .section-head h2{max-width:none}
+  .method .steps{gap:clamp(28px,4.5vw,48px)}
+  .method .step b{font-size:clamp(3.75rem,7vw,5.5rem)}
 }
 @media(max-width:680px){
   .grid-3,.review-grid{grid-template-columns:1fr}
+  .method .steps{grid-template-columns:1fr;gap:36px}
+  .method .step b{font-size:clamp(3.25rem,20vw,5rem);margin-bottom:2px}
+  .method .step div{max-width:none}
 }
 @media(max-width:580px){
   .container{width:min(1120px,calc(100% - 24px))}
