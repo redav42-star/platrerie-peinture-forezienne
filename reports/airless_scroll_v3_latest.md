@@ -13,6 +13,7 @@ Le site public reste le rollback Mùn (`22d3008`).
 | | |
 |---|---|
 | Branche | `prototype/airless-scroll-v3` |
+| SHA | `a024eaf` |
 | Base | `22d3008` |
 | Photo | `assets/chantiers/display/20230922_120900.webp` — pièce finie, parquet, cheminée, portes-fenêtres |
 | Architecture | photo couleur toujours en base + calque sombre + canvas de révélation (nuages elliptiques flous le long d’un trajet, pas de `clip-path` en bandes) |
