@@ -1,0 +1,100 @@
+{
+  "empty_black_frames": [],
+  "BLACK_EMPTY_FRAME_COUNT": 0,
+  "runs": [
+    {
+      "label": "desktop",
+      "ready": true,
+      "story_h": 1710,
+      "view_h": 900,
+      "distance": 810,
+      "errors": [],
+      "metrics": {
+        "0": {
+          "file": "desktop-00.png",
+          "center_mean": 106.33,
+          "center_var": 2973.26,
+          "black_ratio": 0.059,
+          "empty_black": false
+        },
+        "25": {
+          "file": "desktop-25.png",
+          "center_mean": 109.43,
+          "center_var": 2318.24,
+          "black_ratio": 0.0377,
+          "empty_black": false
+        },
+        "50": {
+          "file": "desktop-50.png",
+          "center_mean": 111.36,
+          "center_var": 3132.65,
+          "black_ratio": 0.0243,
+          "empty_black": false
+        },
+        "75": {
+          "file": "desktop-75.png",
+          "center_mean": 110.08,
+          "center_var": 3264.22,
+          "black_ratio": 0.045,
+          "empty_black": false
+        },
+        "100": {
+          "file": "desktop-100.png",
+          "center_mean": 111.43,
+          "center_var": 3620.66,
+          "black_ratio": 0.0441,
+          "empty_black": false
+        }
+      },
+      "video": "C:\\Users\\redav\\Projects\\platrerie-peinture-forezienne\\reports\\airless-v4\\scroll-demo-desktop.webm",
+      "mp4": "C:\\Users\\redav\\Projects\\platrerie-peinture-forezienne\\reports\\airless-v4\\scroll-demo-desktop.mp4"
+    },
+    {
+      "label": "mobile",
+      "ready": true,
+      "story_h": 1383,
+      "view_h": 812,
+      "distance": 571,
+      "errors": [],
+      "metrics": {
+        "0": {
+          "file": "mobile-00.png",
+          "center_mean": 118.93,
+          "center_var": 3159.08,
+          "black_ratio": 0.0411,
+          "empty_black": false
+        },
+        "25": {
+          "file": "mobile-25.png",
+          "center_mean": 123.37,
+          "center_var": 2977.62,
+          "black_ratio": 0.0361,
+          "empty_black": false
+        },
+        "50": {
+          "file": "mobile-50.png",
+          "center_mean": 122.7,
+          "center_var": 2659.53,
+          "black_ratio": 0.0251,
+          "empty_black": false
+        },
+        "75": {
+          "file": "mobile-75.png",
+          "center_mean": 125.66,
+          "center_var": 2573.97,
+          "black_ratio": 0.0245,
+          "empty_black": false
+        },
+        "100": {
+          "file": "mobile-100.png",
+          "center_mean": 124.14,
+          "center_var": 2810.63,
+          "black_ratio": 0.0162,
+          "empty_black": false
+        }
+      },
+      "video": "C:\\Users\\redav\\Projects\\platrerie-peinture-forezienne\\reports\\airless-v4\\scroll-demo-mobile.webm",
+      "mp4": "C:\\Users\\redav\\Projects\\platrerie-peinture-forezienne\\reports\\airless-v4\\scroll-demo-mobile.mp4"
+    }
+  ]
+}
