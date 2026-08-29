@@ -13,7 +13,7 @@ Le site public reste le rollback Mùn (`22d3008`).
 | | |
 |---|---|
 | Branche | `prototype/airless-scroll-v4` |
-| SHA | *(renseigné après commit)* |
+| SHA | `ef89ff4` |
 | Base | V3.1 `5fe05e1` / public `22d3008` |
 | Photo avant | `20230530_095338` — salon en chantier |
 | Photo après | `20230922_120855` — même salon fini |
