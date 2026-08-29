@@ -14,7 +14,7 @@ La V3.1 reste sur `prototype/airless-scroll-v3-1` et n’est pas mergée.
 | | |
 |---|---|
 | Branche | `prototype/airless-scroll-v4` |
-| SHA | *(renseigné après commit)* |
+| SHA | `ace838c` |
 | Base | `5fe05e1` (V3.1) / public `22d3008` |
 | Photo avant | `assets/chantiers/display/20230530_095338.webp` — salon en chantier |
 | Photo après | `assets/chantiers/display/20230922_120855.webp` — même salon fini |
