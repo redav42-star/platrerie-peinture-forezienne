@@ -23,6 +23,7 @@ Le commit `c99266f` n’est plus en production. `SCROLL_DRIVEN_PAINT_EXPERIENCE_
 | Élément | Valeur |
 |---|---|
 | Branche | `prototype/scroll-paint-v2` |
+| SHA | `991c6f8` |
 | Base | `22d3008` |
 | Photo | `assets/chantiers/display/20230922_120900.webp` (pièce finie, parquet, cheminée, portes-fenêtres) |
 | Architecture | `<img>` couleur toujours en base + copie désaturée + 3 `<img>` couleur révélés par `clip-path: inset(...)` |
