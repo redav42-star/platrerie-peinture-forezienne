@@ -98,49 +98,44 @@ h1{font-size:clamp(2.15rem,4.8vw,3.55rem);line-height:1.12;margin:14px 0 20px;ma
 .hero-works h2{margin:0 0 10px;font-size:1.15rem;color:var(--cream);max-width:none;letter-spacing:.12em;text-transform:uppercase;font-family:var(--sans);font-weight:600}
 .hero-works ul{padding-left:18px;color:#C9C3B8;line-height:1.7;margin:0}
 
-/* Airless scroll V3 — organic spray, same photo */
+/* Airless scroll V3.1 — real before photo revealed into after */
 .hero-home.airless-story{overflow:visible;background:#171714}
 .hero-home.airless-story.airless-ready::before{display:none}
 .airless-track{min-height:100svh}
 .airless-story .airless-stage{
   display:block;position:relative;min-height:100svh;overflow:hidden;
-  --p:0;--gx:94%;--gy:34%;--ga:-18deg;--go:1;--copy:1;--cta:1;--raw:1
+  --p:0;--gx:96%;--gy:36%;--ga:-10deg;--go:1;--copy:1;--cta:1;--before:1
 }
-.has-js .airless-story.airless-ready .airless-track{min-height:190vh}
+.has-js .airless-story.airless-ready .airless-track{min-height:200vh}
 .has-js .airless-story.airless-ready .airless-stage{position:sticky;top:0;height:100svh;min-height:100svh;overflow:hidden}
 .airless-scene{
   position:absolute;inset:0;z-index:1;
-  background:#171714 url("assets/chantiers/display/20230922_120900.webp") center 32%/cover no-repeat
+  background:#171714 url("assets/chantiers/display/20230530_095338.webp") 42% 70%/cover no-repeat
 }
-.airless-base,.airless-raw,.airless-reveal{position:absolute;inset:0;margin:0}
-.airless-base img,.airless-raw img{width:100%;height:100%;max-width:none;object-fit:cover;object-position:center 32%;display:block}
+.airless-base,.airless-before,.airless-reveal{position:absolute;inset:0;margin:0}
+.airless-base img{width:100%;height:100%;max-width:none;object-fit:cover;object-position:36% 74%;display:block}
+.airless-before img{width:100%;height:100%;max-width:none;object-fit:cover;object-position:42% 70%;display:block}
 .airless-story .airless-base.hero-photo,.airless-story .airless-base img{min-height:100%;height:100%;animation:none;clip-path:none}
-.airless-raw{z-index:2;opacity:0;pointer-events:none}
-.airless-raw img{filter:grayscale(.58) brightness(.5) contrast(1.06) saturate(.7);transform:scale(1.015)}
-.airless-ready .airless-raw{opacity:var(--raw)}
+.airless-before{z-index:2;opacity:0;pointer-events:none}
+.airless-before img{filter:brightness(.9) saturate(.88) contrast(1.04)}
+.airless-ready .airless-before{opacity:var(--before)}
 .airless-reveal{z-index:3;width:100%;height:100%;pointer-events:none}
-.airless-glow{
-  position:absolute;z-index:4;width:min(42vw,460px);height:min(42vw,460px);
-  left:var(--gx);top:var(--gy);transform:translate(-50%,-50%);
-  background:radial-gradient(circle,rgba(245,241,232,.26) 0%,rgba(245,241,232,.08) 40%,transparent 72%);
-  mix-blend-mode:screen;pointer-events:none;opacity:0
-}
 .airless-mist{
-  position:absolute;z-index:5;width:min(38vw,420px);height:min(16vw,170px);
+  position:absolute;z-index:5;width:min(18vw,210px);height:min(5.5vw,52px);
   left:var(--gx);top:var(--gy);
-  transform:translate(-100%,-50%) rotate(var(--ga));
-  background:radial-gradient(ellipse at 88% 50%,rgba(245,241,232,.62) 0%,rgba(245,241,232,.18) 34%,transparent 76%);
-  filter:blur(8px);pointer-events:none;opacity:0
+  transform:translate(-98%,-50%) rotate(var(--ga));
+  clip-path:polygon(100% 46%,100% 54%,0 100%,0 0);
+  background:linear-gradient(270deg,rgba(245,241,232,.14) 0%,rgba(245,241,232,.04) 46%,transparent 80%);
+  filter:blur(4px);pointer-events:none;opacity:0
 }
 .airless-gun{
-  position:absolute;z-index:14;width:min(280px,34vw);height:auto;
+  position:absolute;z-index:14;width:min(420px,46vw);height:auto;
   left:var(--gx);top:var(--gy);
-  transform:translate(-12%,-54%) rotate(var(--ga));
-  transform-origin:12% 50%;pointer-events:none;
-  filter:drop-shadow(0 18px 26px rgba(0,0,0,.5));opacity:0
+  transform:translate(-6%,-46%) rotate(var(--ga));
+  transform-origin:6% 42%;pointer-events:none;
+  filter:drop-shadow(0 18px 22px rgba(0,0,0,.62));opacity:0
 }
-.airless-ready .airless-glow,.airless-ready .airless-mist{opacity:var(--go)}
-.airless-ready .airless-gun{opacity:var(--go)}
+.airless-ready .airless-mist,.airless-ready .airless-gun{opacity:var(--go)}
 .airless-story .hero-intro,.airless-story .hero-cta-block,.airless-story .hero-works{
   position:absolute;z-index:8;max-width:min(40rem,46vw)
 }
@@ -157,7 +152,7 @@ h1{font-size:clamp(2.15rem,4.8vw,3.55rem);line-height:1.12;margin:14px 0 20px;ma
 .hero-home h1{overflow-wrap:normal}
 
 @media(max-width:900px){
-  .has-js .airless-story.airless-ready .airless-track{min-height:160vh}
+  .has-js .airless-story.airless-ready .airless-track{min-height:165vh}
   .airless-story .hero-intro,.airless-story .hero-cta-block,.airless-story .hero-works{max-width:none;left:0;right:0}
   .airless-story .hero-intro{padding:96px 20px 0}
   .airless-story .hero-intro::before{
@@ -165,12 +160,12 @@ h1{font-size:clamp(2.15rem,4.8vw,3.55rem);line-height:1.12;margin:14px 0 20px;ma
     background:linear-gradient(180deg,rgba(23,23,20,.7) 0%,rgba(23,23,20,.16) 72%,transparent)
   }
   .airless-story .hero-cta-block{bottom:78px;padding:0 20px 12px}
-  .airless-gun{width:min(168px,46vw)}
-  .airless-mist{width:42vw;height:22vw}
+  .airless-gun{width:min(228px,62vw)}
+  .airless-mist{width:36vw;height:10vw}
 }
 
 @media(prefers-reduced-motion:reduce){
-  .airless-raw,.airless-reveal,.airless-glow,.airless-mist,.airless-gun{display:none!important}
+  .airless-before,.airless-reveal,.airless-mist,.airless-gun{display:none!important}
   .airless-story.airless-ready .airless-track{min-height:auto!important}
   .airless-story.airless-ready .airless-stage{position:relative!important;height:auto!important}
   .airless-story .hero-intro,.airless-story .hero-cta-block{opacity:1!important}
@@ -344,7 +339,7 @@ details p{color:var(--muted)}
   .airless-story .airless-scene{position:absolute;inset:0;height:auto;min-height:100%}
   .airless-story .airless-base.hero-photo,
   .airless-story .airless-base img,
-  .airless-story .airless-raw img{min-height:100%;height:100%}
+  .airless-story .airless-before img{min-height:100%;height:100%}
   .hero-grid,.split,.row{grid-template-columns:1fr}
   .row{gap:5px}
   .grid-3,.review-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
