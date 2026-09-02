@@ -173,22 +173,24 @@ section{padding:clamp(56px,7vw,96px) 0}
 .services-grid .card>p:last-child{margin-top:auto;padding-top:18px}
 
 /* Editorial services */
-.services-editorial{position:relative;overflow:hidden;padding:clamp(72px,9vw,128px) 0}
+.services-editorial{position:relative;padding:clamp(56px,7vw,96px) 0}
 .services-editorial .container-wide{display:grid;grid-template-columns:minmax(0,1fr);gap:0 48px}
 .services-editorial .section-head h2{font-size:clamp(2.2rem,4.6vw,4rem);max-width:14ch}
 .service-lines{position:relative;z-index:1}
-.service-line{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.9fr) auto;gap:20px 32px;align-items:end;padding:28px 0 32px;border-top:1px solid rgba(23,23,20,.14);min-width:0}
-.service-line h3{margin:0;font-size:clamp(1.7rem,3.6vw,3.35rem);line-height:.95;font-weight:700;letter-spacing:-.03em;max-width:12ch}
+.service-line{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.9fr) auto;gap:18px 28px;align-items:end;padding:22px 0 26px;border-top:1px solid rgba(23,23,20,.14);min-width:0}
+.service-line h3{margin:0;font-size:clamp(1.55rem,3vw,2.8rem);line-height:1;font-weight:700;letter-spacing:-.03em;max-width:13ch}
 .service-line>p{margin:0;color:var(--muted);max-width:36ch}
 .service-go{margin:0}
-.service-line:hover h3{color:var(--accent)}
+.service-line:hover h3,.service-line:focus-within h3{color:var(--accent)}
 .service-preview{display:none}
 @media(min-width:901px){
   .hero-home .h1-line{white-space:nowrap}
+  .home .brand img{height:88px}
+  .hero-home-static h1{font-size:clamp(3.2rem,5.7vw,5.8rem)}
   .services-editorial .container-wide{grid-template-columns:minmax(0,1fr) minmax(260px,36%)}
   .services-editorial .section-head{grid-column:1}
   .service-lines{grid-column:1}
-  .service-preview{display:block;grid-column:2;grid-row:1 / span 2;position:sticky;top:120px;align-self:start;width:100%;min-height:min(64vh,680px);opacity:.9;background:url("assets/chantiers/display/20241005_073140.webp") center 28%/cover no-repeat}
+  .service-preview{display:block;grid-column:2;grid-row:1 / span 2;position:sticky;top:104px;align-self:start;width:100%;min-height:min(58vh,620px);opacity:.94;background:url("assets/chantiers/display/20241005_073140.webp") center 28%/cover no-repeat}
   .service-line{transition:padding-left .45s ease}
   .service-line:hover{padding-left:10px}
 }
@@ -204,8 +206,8 @@ section{padding:clamp(56px,7vw,96px) 0}
 .step div,.step strong{color:#fff}
 .step b{display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:var(--accent);color:#fff;font-family:var(--sans);font-weight:600;font-size:13px}
 .steps{display:grid;gap:12px}
-.method{background:var(--charcoal);color:var(--on-dark);padding:clamp(80px,12vw,160px) 0}
-.method .section-head{max-width:36rem;margin-bottom:clamp(48px,7vw,96px)}
+.method{background:var(--charcoal);color:var(--on-dark);padding:clamp(64px,8vw,112px) 0}
+.method .section-head{max-width:36rem;margin-bottom:clamp(36px,5vw,64px)}
 .method .section-head h2{color:var(--cream);font-size:clamp(2.2rem,4.5vw,3.8rem);max-width:14ch}
 .method .section-head p{color:#C9C3B8}
 .method .eyebrow{color:var(--sage)}
@@ -213,7 +215,7 @@ section{padding:clamp(56px,7vw,96px) 0}
 .method .step{display:flex;flex-direction:column;align-items:flex-start;gap:0;padding:0;background:transparent;border:0;border-radius:0;color:inherit;min-width:0}
 .method .step div{color:#C9C3B8;font-weight:400;line-height:1.75;max-width:32ch;font-size:1.05rem}
 .method .step strong{display:block;color:var(--cream);font-family:var(--serif);font-weight:600;font-size:clamp(1.4rem,2.2vw,2rem);line-height:1.2;letter-spacing:-.02em;margin:8px 0 12px}
-.method .step b{display:block;width:auto;height:auto;border-radius:0;background:none;color:var(--beige);font-family:var(--serif);font-weight:600;font-size:clamp(6rem,12vw,11rem);line-height:.78;letter-spacing:-.05em;margin:0 0 8px;padding:0}
+.method .step b{display:block;width:auto;height:auto;border-radius:0;background:none;color:var(--beige);font-family:var(--serif);font-weight:600;font-size:clamp(5rem,9vw,8rem);line-height:.78;letter-spacing:-.05em;margin:0 0 8px;padding:0}
 
 /* CTA */
 .cta-band{background:var(--charcoal);color:var(--on-dark);padding:clamp(80px,12vw,140px) 0;min-height:86svh;display:flex;align-items:center}
@@ -226,9 +228,9 @@ section{padding:clamp(56px,7vw,96px) 0}
 .cta-band .contact-line a:hover{color:var(--sage)}
 
 /* Reviews */
-.review-editorial{grid-template-columns:1.4fr .9fr;gap:0 64px}
+.review-editorial{grid-template-columns:1.15fr 1fr;gap:0 48px}
 .review-featured{grid-row:span 3;padding:0 0 28px;background:transparent;border:0;border-radius:0}
-.review-featured p{font-family:var(--serif);font-size:clamp(1.45rem,2.6vw,2.35rem);line-height:1.35;color:var(--ink)}
+.review-featured p{font-family:var(--serif);font-size:clamp(1.35rem,2vw,1.9rem);line-height:1.42;color:var(--ink)}
 .review-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
 .review{background:transparent;border:0;border-top:1px solid var(--line);border-radius:0;padding:22px 0;min-width:0;box-shadow:none}
 .stars{color:#B45309;letter-spacing:2px}
@@ -250,6 +252,16 @@ section{padding:clamp(56px,7vw,96px) 0}
 .portfolio .before-after figcaption{color:#C9C3B8;padding:16px 0 0}
 .portfolio-cta{margin-top:28px}
 .shot-index{position:absolute;top:18px;right:18px;z-index:2;font-family:var(--serif);font-size:1.4rem;color:var(--cream);letter-spacing:.08em}
+
+/* Immediate before / after on case study */
+.case-comparison{background:var(--paper);padding:clamp(56px,7vw,96px) 0}
+.case-comparison .section-head{max-width:46rem}
+.case-comparison .section-head h2{font-size:clamp(2rem,4vw,3.35rem);max-width:17ch}
+.case-comparison .before-after{grid-template-columns:repeat(2,minmax(0,1fr));justify-content:stretch;gap:clamp(14px,2.5vw,32px);align-items:start}
+.case-comparison .before-after figure{border:0;border-radius:0;background:transparent}
+.case-comparison .before-after img{width:100%;height:min(70vh,760px);max-height:none;object-fit:cover;object-position:center top;background:var(--card)}
+.case-comparison .before-after figcaption{padding:14px 0 0}
+.case-comparison .photo-badge{position:absolute;top:14px;left:14px;z-index:2;margin:0}
 
 /* Galleries */
 .gallery-note{background:var(--card);border:1px dashed var(--line);border-radius:var(--radius);padding:24px}
