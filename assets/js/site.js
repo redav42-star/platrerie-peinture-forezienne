@@ -106,13 +106,50 @@
   }
 
   var servicePreview = document.querySelector(".service-preview");
-  document.querySelectorAll(".service-line[data-photo]").forEach(function (line) {
-    line.addEventListener("mouseenter", function () {
-      if (!servicePreview || !window.matchMedia("(hover: hover) and (min-width: 901px)").matches) return;
-      servicePreview.style.backgroundImage = "url('" + line.getAttribute("data-photo") + "')";
-      servicePreview.classList.add("is-on");
+  var serviceLines = Array.prototype.slice.call(document.querySelectorAll(".service-line[data-photo]"));
+  var servicesSection = servicePreview && servicePreview.closest(".services-editorial");
+  var serviceTicking = false;
+
+  function setServicePreview(line) {
+    if (!servicePreview || !line || !window.matchMedia("(min-width: 901px)").matches) return;
+    servicePreview.style.backgroundImage = "url('" + line.getAttribute("data-photo") + "')";
+    servicePreview.classList.add("is-on");
+  }
+
+  function syncServicePreview() {
+    serviceTicking = false;
+    if (!servicePreview || !servicesSection || !serviceLines.length || !window.matchMedia("(min-width: 901px)").matches) return;
+    var sectionRect = servicesSection.getBoundingClientRect();
+    if (sectionRect.bottom < 0 || sectionRect.top > window.innerHeight) return;
+    var target = window.innerHeight * 0.45;
+    var best = serviceLines[0];
+    var bestDistance = Infinity;
+    serviceLines.forEach(function (line) {
+      var rect = line.getBoundingClientRect();
+      var center = (rect.top + rect.bottom) / 2;
+      var distance = Math.abs(center - target);
+      if (distance < bestDistance) {
+        bestDistance = distance;
+        best = line;
+      }
     });
+    setServicePreview(best);
+  }
+
+  serviceLines.forEach(function (line) {
+    line.addEventListener("mouseenter", function () {
+      if (!window.matchMedia("(hover: hover) and (min-width: 901px)").matches) return;
+      setServicePreview(line);
+    });
+    line.addEventListener("focusin", function () { setServicePreview(line); });
   });
+  window.addEventListener("scroll", function () {
+    if (serviceTicking) return;
+    serviceTicking = true;
+    requestAnimationFrame(syncServicePreview);
+  }, { passive: true });
+  window.addEventListener("resize", syncServicePreview);
+  syncServicePreview();
 
   var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var nodes = document.querySelectorAll(".reveal");
