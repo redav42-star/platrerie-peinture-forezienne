@@ -94,6 +94,7 @@ h1{font-size:clamp(2.15rem,4.8vw,3.55rem);line-height:1.12;margin:14px 0 20px;ma
 .hero-home .btn-dark:hover{background:var(--on-dark);color:var(--charcoal);opacity:1}
 .hero-photo{margin:0;height:100%;min-height:100svh;overflow:hidden}
 .hero-photo img{width:100%;height:100svh;object-fit:cover;object-position:center 28%;clip-path:inset(0 0 0 0)}
+.hero-home-static .hero-photo img{object-position:center 46%}
 .has-js .hero-photo img{animation:photoReveal .9s cubic-bezier(.22,1,.36,1) both}
 @keyframes photoReveal{from{clip-path:inset(0 0 0 100%)}to{clip-path:inset(0 0 0 0)}}
 .hero-works h2{margin:0 0 10px;font-size:1.15rem;color:var(--cream);max-width:none;letter-spacing:.12em;text-transform:uppercase;font-family:var(--sans);font-weight:600}
@@ -248,10 +249,31 @@ section{padding:clamp(56px,7vw,96px) 0}
 .portfolio .before-after{grid-template-columns:minmax(0,1.08fr) minmax(0,.82fr);justify-content:stretch;gap:clamp(20px,3vw,40px);align-items:end}
 .portfolio .before-after figure{background:transparent;border:0;border-radius:0}
 .portfolio .before-after img{max-height:none;object-fit:cover;object-position:center top;height:min(86vh,920px)}
-.portfolio .before-after figure:last-child img{height:min(70vh,740px)}
+.portfolio .before-after figure:last-child img{height:min(86vh,920px)}
 .portfolio .before-after figcaption{color:#C9C3B8;padding:16px 0 0}
 .portfolio-cta{margin-top:28px}
 .shot-index{position:absolute;top:18px;right:18px;z-index:2;font-family:var(--serif);font-size:1.4rem;color:var(--cream);letter-spacing:.08em}
+
+/* Material and craft evidence */
+.craft-showcase{background:var(--paper);padding:clamp(72px,9vw,124px) 0}
+.craft-heading{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,.72fr);gap:clamp(28px,6vw,88px);align-items:end;margin-bottom:clamp(32px,5vw,56px)}
+.craft-heading .section-head{margin:0}
+.craft-heading .section-head h2{font-size:clamp(2.35rem,5vw,4.5rem);line-height:1.02;max-width:13ch}
+.craft-intro{margin:0;color:var(--muted);font-size:1.08rem;line-height:1.8;max-width:43rem}
+.craft-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.5vw,32px);align-items:start}
+.craft-card{min-width:0;border-top:1px solid var(--line);padding-top:14px}
+.craft-media{position:relative;overflow:hidden;background:var(--charcoal);aspect-ratio:4/5}
+.craft-media video{display:block;width:100%;height:100%;object-fit:cover;background:var(--charcoal)}
+.craft-number{position:absolute;top:14px;right:14px;z-index:2;color:#fff;font-family:var(--serif);font-size:1.4rem;letter-spacing:.08em;text-shadow:0 1px 12px rgba(0,0,0,.5);pointer-events:none}
+.craft-copy{padding:20px 0 0}
+.craft-copy h3{font-size:clamp(1.45rem,2.4vw,2.1rem);line-height:1.08;margin:0 0 12px}
+.craft-copy p{color:var(--muted);margin:0;line-height:1.75}
+.craft-copy .btn{margin-top:20px}
+.craft-card-stack{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.craft-card-stack figure{margin:0;position:relative;overflow:hidden;background:var(--card);aspect-ratio:4/5}
+.craft-card-stack img{width:100%;height:100%;object-fit:cover}
+.craft-card-stack figcaption{position:absolute;left:8px;right:8px;bottom:8px;background:rgba(23,23,20,.84);color:#fff;padding:8px 10px;font-size:.73rem;line-height:1.35}
+.craft-card-stack .craft-copy{grid-column:1/-1}
 
 /* Immediate before / after on case study */
 .case-comparison{background:var(--paper);padding:clamp(56px,7vw,96px) 0}
@@ -262,6 +284,17 @@ section{padding:clamp(56px,7vw,96px) 0}
 .case-comparison .before-after img{width:100%;height:min(70vh,760px);max-height:none;object-fit:cover;object-position:center top;background:var(--card)}
 .case-comparison .before-after figcaption{padding:14px 0 0}
 .case-comparison .photo-badge{position:absolute;top:14px;left:14px;z-index:2;margin:0}
+.case-pairs{background:var(--paper)}
+.case-pairs .section-head{max-width:48rem}
+.case-pairs .section-head h2{max-width:18ch}
+.case-pair{padding:clamp(28px,5vw,56px) 0;border-top:1px solid var(--line)}
+.case-pair>h3{font-size:clamp(1.8rem,3.4vw,3rem);margin:0 0 22px}
+.case-pair-note{max-width:48rem;color:var(--muted);margin:-10px 0 24px}
+.case-pair .before-after{grid-template-columns:repeat(2,minmax(0,1fr));justify-content:stretch;gap:clamp(14px,2.5vw,32px)}
+.case-pair .before-after figure{border:0;border-radius:0}
+.case-pair .before-after img{width:100%;height:min(66vh,700px);max-height:none;object-fit:cover;object-position:center top}
+.case-pair .before-after figcaption{padding:14px 0 0}
+.case-pair .photo-badge{position:absolute;top:14px;left:14px;margin:0}
 
 /* Galleries */
 .gallery-note{background:var(--card);border:1px dashed var(--line);border-radius:var(--radius);padding:24px}
@@ -353,6 +386,10 @@ details p{color:var(--muted)}
   .review-featured{grid-row:auto;grid-column:1/-1}
   .portfolio .before-after{grid-template-columns:repeat(2,minmax(0,1fr))}
   .portfolio .before-after img,.portfolio .before-after figure:last-child img{height:min(62vh,560px)}
+  .craft-heading{grid-template-columns:1fr}
+  .craft-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .craft-card-stack{grid-column:1/-1;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .craft-card-stack .craft-copy{grid-column:1/-1}
   .site-footer .container{grid-template-columns:1fr}
 }
 
@@ -365,6 +402,10 @@ details p{color:var(--muted)}
   .method .step div{max-width:none}
   .portfolio .before-after{grid-template-columns:1fr}
   .portfolio .before-after img,.portfolio .before-after figure:last-child img{height:auto;max-height:min(72vh,560px)}
+  .craft-grid{grid-template-columns:1fr}
+  .craft-card-stack{grid-column:auto}
+  .case-pair .before-after{grid-template-columns:1fr}
+  .case-pair .before-after img{height:auto;max-height:min(72vh,560px)}
 }
 
 @media(max-width:580px){
