@@ -1,0 +1,21 @@
+name: Signaler les mises a jour a Bing
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Recuperer le site
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Prevenir IndexNow
+        run: node scripts/submit-indexnow.mjs "${{ github.event.before }}" "${{ github.sha }}"
