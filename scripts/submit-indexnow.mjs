@@ -5,8 +5,10 @@ const host = "redav42-star.github.io";
 const siteRoot = `https://${host}/platrerie-peinture-forezienne/`;
 const key = "608163cc152a07304fbc7afd2284609f";
 const keyLocation = `${siteRoot}${key}.txt`;
-const before = process.argv[2];
-const after = process.argv[3] || "HEAD";
+const argumentsWithoutFlags = process.argv.slice(2).filter((argument) => argument !== "--dry-run");
+const before = argumentsWithoutFlags[0];
+const after = argumentsWithoutFlags[1] || "HEAD";
+const dryRun = process.argv.includes("--dry-run");
 
 function readSitemapUrls() {
   const xml = readFileSync("sitemap.xml", "utf8");
@@ -59,6 +61,11 @@ async function waitForPublishedKey() {
 }
 
 const urlList = urlsToSubmit(changedFiles());
+
+if (dryRun) {
+  console.log(JSON.stringify({ dryRun: true, host, keyLocation, urlList }, null, 2));
+  process.exit(0);
+}
 
 if (urlList.length === 0) {
   console.log("Aucune page HTML modifiee : aucun signal IndexNow a envoyer.");

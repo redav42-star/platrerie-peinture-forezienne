@@ -1,0 +1,14 @@
+{
+  "name": "ppf-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "check": "node scripts/check-site.mjs && node --check assets/js/site.js && node --check assets/js/gallery.js && node --check assets/js/comparison.js && node --check assets/js/contact.js && node --check scripts/submit-indexnow.mjs",
+    "check:site": "node scripts/check-site.mjs",
+    "indexnow:dry-run": "node scripts/submit-indexnow.mjs 0000000000000000000000000000000000000000 HEAD --dry-run"
+  },
+  "devDependencies": {
+    "vite": "^7.0.0"
+  }
+}

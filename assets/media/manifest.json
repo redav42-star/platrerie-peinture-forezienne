@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "statut": "registre des versions retouchées validées",
+  "definitions": {
+    "source": "une prise de vue ou un visuel distinct, indépendamment du format, du recadrage ou de la taille",
+    "master": "fichier éditorial de référence retenu pour le groupe",
+    "derive": "autre fichier issu de la même source visuelle"
+  },
+  "groups": [
+    {
+      "source": "20230922_120855",
+      "etat": "APRES",
+      "master": "assets/media/accueil/hero-salon.webp",
+      "derivatives": [
+        "assets/media/accueil/hero-salon-480.webp",
+        "assets/media/accueil/hero-salon-600.webp",
+        "assets/media/accueil/hero-salon-720.webp",
+        "assets/media/accueil/hero-salon.jpg"
+      ],
+      "legacy_paths": [
+        "assets/chantiers/display/20230922_120855.jpg",
+        "assets/chantiers/display/20230922_120855.webp",
+        "assets/chantiers/web/20230922_120855.jpg",
+        "assets/media/avant-apres/grand-salon-apres.webp"
+      ],
+      "deprecated_derivatives": [
+        "assets/media/avant-apres/grand-salon-apres-600.webp"
+      ],
+      "retouche": "version validée sans bâche",
+      "usage": "résultat APRES et hero salon",
+      "html_legacy_references": 0,
+      "policy": "Utiliser le master et ses dérivés ; conserver les anciens chemins seulement pour la traçabilité."
+    },
+    {
+      "source": "20230922_120900",
+      "etat": "PENDANT",
+      "master": "assets/media/etapes/appartement-cheminee-pendant.webp",
+      "derivatives": [
+        "assets/media/etapes/appartement-cheminee-pendant-600.webp"
+      ],
+      "legacy_paths": [
+        "assets/chantiers/display/20230922_120900.jpg",
+        "assets/chantiers/display/20230922_120900.webp",
+        "assets/chantiers/web/20230922_120900.jpg"
+      ],
+      "retouche": "câbles supprimés et lumière ajustée ; contrôle visuel éditorial effectué",
+      "usage": "étape PENDANT uniquement",
+      "html_legacy_references": 0,
+      "policy": "Ne pas présenter cette prise de vue comme un état APRES."
+    },
+    {
+      "source": "20230922_120655",
+      "etat": "PENDANT",
+      "master": "assets/media/avant-apres/couloir-apres.webp",
+      "derivatives": [
+        "assets/media/avant-apres/couloir-apres-600.webp"
+      ],
+      "policy": "Nom hérité après, image réservée à une étape intermédiaire : habillages au-dessus des portes ouverts."
+    }
+  ],
+  "excluded": [
+    {
+      "source": "20230922_120844",
+      "reason": "retouche rejetée et non intégrée",
+      "action": "aucun master retouché proposé"
+    }
+  ]
+}
