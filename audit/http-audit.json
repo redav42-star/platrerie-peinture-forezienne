@@ -1,0 +1,872 @@
+{
+  "observedAt": "2026-10-06T20:36:08.822Z",
+  "siteRoot": "https://redav42-star.github.io/platrerie-peinture-forezienne/",
+  "checked": 106,
+  "failures": 0,
+  "results": [
+    {
+      "url": "https://redav42-star.github.io/",
+      "diagnostic": true,
+      "status": 404,
+      "finalUrl": "https://redav42-star.github.io/",
+      "cacheControl": null,
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/608163cc152a07304fbc7afd2284609f.txt",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/608163cc152a07304fbc7afd2284609f.txt",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20240618_104920-600.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20240618_104920-600.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20240618_104920.jpg",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20240618_104920.jpg",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20240618_104920.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20240618_104920.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20240721_155050-600.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20240721_155050-600.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20240721_155050.jpg",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20240721_155050.jpg",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20240721_155050.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20240721_155050.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241005_073045-600.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241005_073045-600.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241005_073045.jpg",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241005_073045.jpg",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241005_073045.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241005_073045.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241005_073140-600.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241005_073140-600.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241005_073140.jpg",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241005_073140.jpg",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241005_073140.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241005_073140.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241005_073202-600.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241005_073202-600.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241005_073202.jpg",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241005_073202.jpg",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241005_073202.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241005_073202.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241005_073208-600.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241005_073208-600.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241005_073208.jpg",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241005_073208.jpg",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241005_073208.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241005_073208.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241115_145214-600.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241115_145214-600.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241115_145214.jpg",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241115_145214.jpg",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241115_145214.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241115_145214.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241115_145305-600.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241115_145305-600.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241115_145305.jpg",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241115_145305.jpg",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241115_145305.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241115_145305.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241116_150146-600.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241116_150146-600.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241116_150146.jpg",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241116_150146.jpg",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241116_150146.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20241116_150146.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20250815_123931-600.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20250815_123931-600.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20250815_123931.jpg",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20250815_123931.jpg",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20250815_123931.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/20250815_123931.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/IMG-20240430-WA0004-600.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/IMG-20240430-WA0004-600.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/IMG-20240430-WA0004.jpg",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/IMG-20240430-WA0004.jpg",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/IMG-20240430-WA0004.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/IMG-20240430-WA0004.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/Snapchat-42290463-600.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/Snapchat-42290463-600.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/Snapchat-42290463.jpg",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/Snapchat-42290463.jpg",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/Snapchat-42290463.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/Snapchat-42290463.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/Snapchat-848538168-600.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/Snapchat-848538168-600.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/Snapchat-848538168.jpg",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/Snapchat-848538168.jpg",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/Snapchat-848538168.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/display/Snapchat-848538168.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/web/20240618_104920.jpg",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/web/20240618_104920.jpg",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/web/20240721_155050.jpg",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/web/20240721_155050.jpg",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/web/20241005_073045.jpg",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/web/20241005_073045.jpg",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/web/20241005_073140.jpg",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/web/20241005_073140.jpg",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/web/20241005_073202.jpg",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/web/20241005_073202.jpg",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/web/20241005_073208.jpg",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/web/20241005_073208.jpg",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/web/20241115_145214.jpg",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/web/20241115_145214.jpg",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/web/20241115_145305.jpg",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/web/20241115_145305.jpg",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/web/20241116_150146.jpg",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/web/20241116_150146.jpg",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/web/20250815_123931.jpg",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/web/20250815_123931.jpg",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/web/IMG-20240430-WA0004.jpg",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/web/IMG-20240430-WA0004.jpg",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/web/Snapchat-42290463.jpg",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/web/Snapchat-42290463.jpg",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/web/Snapchat-848538168.jpg",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/chantiers/web/Snapchat-848538168.jpg",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/favicon.png",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/favicon.png",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/fonts/fonts.css",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/fonts/fonts.css",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/fonts/inter-latin.woff2",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/fonts/inter-latin.woff2",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/fonts/playfair-display-italic-latin.woff2",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/fonts/playfair-display-italic-latin.woff2",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/fonts/playfair-display-latin.woff2",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/fonts/playfair-display-latin.woff2",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/js/comparison.js?v=20260908-r2",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/js/comparison.js?v=20260908-r2",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/js/contact.js?v=20260908-r2",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/js/contact.js?v=20260908-r2",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/js/gallery.js",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/js/gallery.js",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/js/site.js?v=20260908-r2",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/js/site.js?v=20260908-r2",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/logo-premium.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/logo-premium.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/accueil/hero-salon-480.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/accueil/hero-salon-480.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/accueil/hero-salon-600.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/accueil/hero-salon-600.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/accueil/hero-salon-720.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/accueil/hero-salon-720.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/accueil/hero-salon.jpg",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/accueil/hero-salon.jpg",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/accueil/hero-salon.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/accueil/hero-salon.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/avant-apres/couloir-apres-600.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/avant-apres/couloir-apres-600.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/avant-apres/couloir-apres.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/avant-apres/couloir-apres.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/avant-apres/couloir-avant-600.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/avant-apres/couloir-avant-600.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/avant-apres/couloir-avant.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/avant-apres/couloir-avant.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/avant-apres/grand-salon-avant-600.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/avant-apres/grand-salon-avant-600.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/avant-apres/grand-salon-avant.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/avant-apres/grand-salon-avant.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/avant-apres/salon-cheminee-apres-600.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/avant-apres/salon-cheminee-apres-600.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/avant-apres/salon-cheminee-apres.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/avant-apres/salon-cheminee-apres.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/avant-apres/salon-cheminee-avant-600.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/avant-apres/salon-cheminee-avant-600.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/avant-apres/salon-cheminee-avant.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/avant-apres/salon-cheminee-avant.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/etapes/appartement-cheminee-pendant-600.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/etapes/appartement-cheminee-pendant-600.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/etapes/appartement-cheminee-pendant.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/etapes/appartement-cheminee-pendant.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/savoir-faire/pose-placo-echasses-600.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/savoir-faire/pose-placo-echasses-600.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/savoir-faire/pose-placo-echasses.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/savoir-faire/pose-placo-echasses.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/savoir-faire/protection-chantier-600.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/savoir-faire/protection-chantier-600.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/savoir-faire/protection-chantier.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/savoir-faire/protection-chantier.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/videos/application-airless-poster.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/videos/application-airless-poster.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/videos/application-airless.mp4",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/videos/application-airless.mp4",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/videos/application-airless.webm",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/videos/application-airless.webm",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/videos/poncage-mecanique-poster.webp",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/videos/poncage-mecanique-poster.webp",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/videos/poncage-mecanique.mp4",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/videos/poncage-mecanique.mp4",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/videos/poncage-mecanique.webm",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/assets/media/videos/poncage-mecanique.webm",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/bandes-a-joints-jointeur.html",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/bandes-a-joints-jointeur.html",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/chantier-renovation-appartement-saint-etienne-2023.html",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/chantier-renovation-appartement-saint-etienne-2023.html",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/cloisons-faux-plafonds.html",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/cloisons-faux-plafonds.html",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/contact.html",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/contact.html",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/degats-des-eaux.html",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/degats-des-eaux.html",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/googledc9bb4fdc88e0307.html",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/googledc9bb4fdc88e0307.html",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/peinture-airless.html",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/peinture-airless.html",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/platrerie.html",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/platrerie.html",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/professionnels.html",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/professionnels.html",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/quand-repeindre-apres-degat-des-eaux.html",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/quand-repeindre-apres-degat-des-eaux.html",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/ratissage-enduits.html",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/ratissage-enduits.html",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/renovation-appartement.html",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/renovation-appartement.html",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/robots.txt",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/robots.txt",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/sitemap.xml",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/sitemap.xml",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/platrerie-peinture-forezienne/styles.css?v=20260908-r2",
+      "diagnostic": false,
+      "status": 200,
+      "finalUrl": "https://redav42-star.github.io/platrerie-peinture-forezienne/styles.css?v=20260908-r2",
+      "cacheControl": "max-age=600",
+      "errors": []
+    },
+    {
+      "url": "https://redav42-star.github.io/robots.txt",
+      "diagnostic": true,
+      "status": 404,
+      "finalUrl": "https://redav42-star.github.io/robots.txt",
+      "cacheControl": null,
+      "errors": []
+    }
+  ]
+}
