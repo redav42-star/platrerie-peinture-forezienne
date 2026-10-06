@@ -1,128 +1,45 @@
-import { existsSync, readFileSync } from "node:fs";
-import { resolve } from "node:path";
+import "./check-technical.mjs";
+import { attr, documentFor, existsExactly, pages, read } from "./site-model.mjs";
 
-const siteRoot = "https://redav42-star.github.io/platrerie-peinture-forezienne/";
-const pages = [
-  "index.html",
-  "platrerie.html",
-  "bandes-a-joints-jointeur.html",
-  "peinture-airless.html",
-  "ratissage-enduits.html",
-  "cloisons-faux-plafonds.html",
-  "renovation-appartement.html",
-  "chantier-renovation-appartement-saint-etienne-2023.html",
-  "degats-des-eaux.html",
-  "quand-repeindre-apres-degat-des-eaux.html",
-  "professionnels.html",
-  "contact.html",
-];
 const errors = [];
-const check = (condition, message) => {
-  if (!condition) errors.push(message);
-};
-const read = (file) => readFileSync(file, "utf8");
-const canonicalFor = (page) => (page === "index.html" ? siteRoot : `${siteRoot}${page}`);
-const isOwnAbsoluteUrl = (value) => value.startsWith(siteRoot);
-const localPath = (value) => {
-  const withoutFragment = value.split("#", 1)[0].split("?", 1)[0];
-  if (!withoutFragment || withoutFragment === "./") return null;
-  if (isOwnAbsoluteUrl(withoutFragment)) return withoutFragment.slice(siteRoot.length);
-  if (/^(?:[a-z]+:|\/\/)/i.test(withoutFragment)) return null;
-  return withoutFragment;
-};
-const attributes = (tag) => [...tag.matchAll(/\b(?:src|href)="([^"]+)"/g)].map((match) => match[1]);
-const srcsetValues = (tag) => [...tag.matchAll(/\bsrcset="([^"]+)"/g)]
-  .flatMap((match) => match[1].split(",").map((entry) => entry.trim().split(/\s+/, 1)[0]));
-const tags = (html) => html.match(/<(?:a|img|source|script|link)\b[^>]*>/g) || [];
-
+const check = (condition, message) => { if (!condition) errors.push(message); };
 for (const page of pages) {
-  const html = read(page);
-  const prefix = `${page}:`;
-
-  check((html.match(/<title>[^<]+<\/title>/g) || []).length === 1, `${prefix} title absent ou dupliqué`);
-  check((html.match(/<meta\b[^>]*\bname="description"[^>]*>/g) || []).length === 1, `${prefix} meta description absente ou dupliquée`);
-  check(html.includes('<meta content="index,follow" name="robots"'), `${prefix} robots index,follow absent`);
-  check(html.includes(`<link href="${canonicalFor(page)}" rel="canonical"`), `${prefix} canonical incorrecte`);
-  check(html.includes(`<meta content="${canonicalFor(page)}" property="og:url"`), `${prefix} og:url incorrecte`);
-  check(html.includes('property="og:image"') && html.includes('assets/media/accueil/hero-salon.jpg'), `${prefix} og:image master absent`);
-
-  const schemaBlocks = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((match) => match[1]);
-  check(schemaBlocks.length === 1, `${prefix} bloc JSON-LD absent ou dupliqué`);
-  if (schemaBlocks.length === 1) {
-    try {
-      const schema = JSON.parse(schemaBlocks[0]);
-      const graph = schema["@graph"] || [];
-      check(graph.some((entry) => entry["@type"] === "HomeAndConstructionBusiness"), `${prefix} entité entreprise absente du JSON-LD`);
-      if (page !== "index.html") check(graph.some((entry) => entry["@type"] === "BreadcrumbList"), `${prefix} BreadcrumbList absent du JSON-LD`);
-    } catch (error) {
-      errors.push(`${prefix} JSON-LD invalide (${error.message})`);
-    }
+  const nodes = documentFor(read(page));
+  const meta = (name, value) => nodes.filter((node) => node.tagName === "meta" && attr(node, name) === value);
+  const robots = meta("name", "robots");
+  check(robots.length === 1 && /\bindex\b/i.test(attr(robots[0] || {}, "content") || ""), `${page}: robots index absent`);
+  for (const property of ["og:title", "og:description", "og:image", "og:image:alt"]) {
+    check(meta("property", property).length === 1 && attr(meta("property", property)[0] || {}, "content"), `${page}: ${property} absent ou duplique`);
   }
-  if (page !== "index.html") check(html.includes('class="breadcrumb container"'), `${prefix} fil d’Ariane visible absent`);
-
-  const header = html.match(/<header class="site-header">([\s\S]*?)<\/header>/);
-  check(Boolean(header), `${prefix} header absent`);
-  if (header) {
-    const headerHtml = header[1];
-    const order = ["class=\"brand\"", "class=\"desktop-nav\"", "class=\"header-cta\"", "class=\"menu-toggle\""]
-      .map((needle) => headerHtml.indexOf(needle));
-    check(order.every((position) => position >= 0) && order.every((position, index) => index === 0 || position > order[index - 1]), `${prefix} ordre DOM du header incorrect`);
+  check(nodes.filter((node) => node.tagName === "script" && attr(node, "type") === "application/ld+json").length === 1, `${page}: JSON-LD absent ou duplique`);
+  for (const node of nodes.filter((node) => node.tagName === "img")) {
+    check(attr(node, "alt") !== undefined, `${page}: image sans alt`);
+    check(/^[1-9]\d*$/.test(attr(node, "width") || "") && /^[1-9]\d*$/.test(attr(node, "height") || ""), `${page}: image sans dimensions`);
   }
-
-  for (const tag of tags(html)) {
-    for (const value of [...attributes(tag), ...srcsetValues(tag)]) {
-      const path = localPath(value);
-      if (path) check(existsSync(resolve(path)), `${prefix} ressource locale introuvable: ${path}`);
-    }
-    if (tag.startsWith("<img")) {
-      check(/\balt="[^"]*"/.test(tag), `${prefix} image sans alt`);
-      check(/\bwidth="\d+"/.test(tag) && /\bheight="\d+"/.test(tag), `${prefix} image sans dimensions`);
-    }
-  }
-  for (const match of html.matchAll(/<a\b[^>]*\bhref="#([^"]+)"[^>]*>/g)) {
-    check(new RegExp(`\\bid="${match[1]}"`).test(html), `${prefix} ancre interne introuvable: #${match[1]}`);
-  }
+  const header = read(page).match(/<header class="site-header">([\s\S]*?)<\/header>/);
+  const order = ["brand", "desktop-nav", "header-cta", "menu-toggle"].map((name) => header?.[1].indexOf(`class="${name}"`) ?? -1);
+  check(order.every((position, index) => position >= 0 && (index === 0 || position > order[index - 1])), `${page}: ordre DOM du header incorrect`);
+  if (page !== "index.html") check(read(page).includes('class="breadcrumb container"'), `${page}: fil d'Ariane visible absent`);
 }
+const siteRoot = "https://redav42-star.github.io/platrerie-peinture-forezienne/";
+check(read("robots.txt").split(/\r?\n/).includes(`Sitemap: ${siteRoot}sitemap.xml`), "robots.txt: sitemap incorrect");
 
-const sitemap = read("sitemap.xml");
-const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
-check(sitemapUrls.length === pages.length, "sitemap: nombre d’URL inattendu");
-check(new Set(sitemapUrls).size === sitemapUrls.length, "sitemap: URL dupliquée");
-check(pages.every((page) => sitemapUrls.includes(canonicalFor(page))), "sitemap: page publique absente");
-const sitemapLastmods = [...sitemap.matchAll(/<lastmod>([^<]+)<\/lastmod>/g)].map((match) => match[1]);
-check(sitemapLastmods.length === pages.length && sitemapLastmods.every((date) => /^\d{4}-\d{2}-\d{2}$/.test(date) && date <= new Date().toISOString().slice(0,10)), "sitemap: lastmod absent, invalide ou futur");
-check(read("robots.txt").includes(`Sitemap: ${siteRoot}sitemap.xml`), "robots.txt: sitemap absente");
-
-const mediaManifest = JSON.parse(read("assets/media/manifest.json"));
-for (const group of mediaManifest.groups || []) {
-  check(existsSync(resolve(group.master)), `master absent: ${group.master}`);
-  for (const path of group.derivatives || []) check(existsSync(resolve(path)), `dérivé absent: ${path}`);
-  for (const legacy of group.legacy_paths || []) {
-    check(!pages.map(read).some(html => html.includes(legacy)), `ancienne version référencée: ${legacy}`);
-  }
+const manifest = JSON.parse(read("assets/media/manifest.json"));
+for (const group of manifest.groups || []) {
+  for (const file of [group.master, ...(group.derivatives || [])]) check(existsExactly(file), `media absent: ${file}`);
+  for (const legacy of group.legacy_paths || []) check(!pages.some((page) => read(page).includes(legacy)), `ancienne version referencee: ${legacy}`);
 }
-const mediaGroup = mediaManifest.groups?.find((group) => group.master === "assets/media/accueil/hero-salon.webp");
-check(Boolean(mediaGroup), "manifeste média: master hero-salon absent");
-if (mediaGroup) {
-  check(mediaGroup.source === "20230922_120855", "manifeste média: source historique absente");
-  const expectedLegacyPaths = [
-    "assets/chantiers/display/20230922_120855.webp",
-    "assets/chantiers/display/20230922_120855.jpg",
-    "assets/chantiers/web/20230922_120855.jpg",
-    "assets/media/avant-apres/grand-salon-apres.webp",
-  ];
-  check(expectedLegacyPaths.every((path) => mediaGroup.legacy_paths?.includes(path)), "manifeste média: chemins historiques incomplets");
-  for (const legacy of [mediaGroup.source, ...mediaGroup.legacy_paths]) {
-    check(!pages.map(read).some((content) => content.includes(legacy)), `ancien master encore référencé par une page publique: ${legacy}`);
-  }
+const hero = manifest.groups?.find((group) => group.master === "assets/media/accueil/hero-salon.webp");
+check(Boolean(hero) && hero.source === "20230922_120855", "manifeste media: master hero ou source historique absent");
+if (hero) {
+  const legacyPaths = ["assets/chantiers/display/20230922_120855.webp", "assets/chantiers/display/20230922_120855.jpg", "assets/chantiers/web/20230922_120855.jpg", "assets/media/avant-apres/grand-salon-apres.webp"];
+  check(legacyPaths.every((path) => hero.legacy_paths?.includes(path)), "manifeste media: chemins historiques incomplets");
+  for (const legacy of [hero.source, ...hero.legacy_paths]) check(!pages.some((page) => read(page).includes(legacy)), `ancien master reference: ${legacy}`);
 }
-
-const key = read("608163cc152a07304fbc7afd2284609f.txt").trim();
-check(/^[a-f0-9]{32}$/.test(key), "IndexNow: clé invalide");
-
+const key = "608163cc152a07304fbc7afd2284609f";
+check(read(`${key}.txt`).trim() === key, "IndexNow: contenu de cle incorrect");
 if (errors.length) {
-  console.error(`Échec du contrôle statique (${errors.length}):`);
-  for (const error of errors) console.error(`- ${error}`);
+  console.error(errors.map((error) => `- ${error}`).join("\n"));
   process.exit(1);
 }
-console.log(`Contrôle statique réussi : ${pages.length} pages, sitemap, médias, JSON-LD et IndexNow.`);
+console.log(`Controle statique reussi: ${pages.length} pages, metadonnees, images, medias et cle IndexNow.`);

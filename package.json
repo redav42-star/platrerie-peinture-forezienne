@@ -6,9 +6,13 @@
     "dev": "vite",
     "check": "node scripts/check-site.mjs && node --check assets/js/site.js && node --check assets/js/gallery.js && node --check assets/js/comparison.js && node --check assets/js/contact.js && node --check scripts/submit-indexnow.mjs",
     "check:site": "node scripts/check-site.mjs",
+    "check:http": "node scripts/check-http.mjs",
+    "test": "node --test scripts/technical.test.mjs",
     "indexnow:dry-run": "node scripts/submit-indexnow.mjs 0000000000000000000000000000000000000000 HEAD --dry-run"
   },
   "devDependencies": {
+    "fast-xml-parser": "^5.11.2",
+    "parse5": "^8.0.1",
     "vite": "^7.0.0"
   }
 }
